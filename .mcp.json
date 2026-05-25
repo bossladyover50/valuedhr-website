@@ -6,7 +6,7 @@
 			"description": "Enter your Hostinger API token (required)"
 		}
 	],
-	"servers": {
+	"mcpServers": {
 		"hostinger-mcp": {
 			"type": "stdio",
 			"command": "npx",
