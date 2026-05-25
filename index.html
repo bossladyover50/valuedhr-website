@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ValuedHR offers AI and human virtual assistants, custom AI clones, web design, social media marketing, customer service solutions, and lead generation services for growing businesses.">
+    <meta name="keywords" content="virtual assistant services, AI virtual assistant, human virtual assistants, offshore VA, USA virtual assistants, AI clone, custom AI agents, web design, social media marketing, customer service outsourcing, lead generation, LinkedIn optimization">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ValuedHR - AI & Human Virtual Assistants, Custom AI Solutions & Digital Marketing">
+    <meta property="og:description" content="Transform your business with AI virtual assistants, human VAs, custom AI clones, web design, and comprehensive digital marketing services.">
+    <meta property="og:type" content="website">
+    <title>ValuedHR - AI & Human Virtual Assistants | Custom AI Solutions | Web Design & Marketing</title>
+    <link rel="canonical" href="https://valuedhr.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7C3AED;
+            --primary-dark: #5B21B6;
+            --primary-light: #A78BFA;
+            --gradient: linear-gradient(135deg, #5B21B6 0%, #7C3AED 60%, #9F67FF 100%);
+            --success: #10B981;
+            --error: #EF4444;
+
+            --dark-bg: #080614;
+            --dark-surface: #100C22;
+            --dark-border: rgba(124,58,237,0.18);
+
+            --white: #FFFFFF;
+            --light-bg: #F8F7FF;
+            --border: #EAE6FF;
+
+            --text-dark: #0D0B1A;
+            --text-body: #4B4570;
+            --text-muted: #8E8AAE;
+            --text-white: #F4F1FF;
+            --text-white-muted: #B0A8D4;
+
+            --shadow-sm: 0 1px 4px rgba(91,33,182,0.07);
+            --shadow-md: 0 8px 32px rgba(91,33,182,0.13);
+            --shadow-lg: 0 24px 64px rgba(0,0,0,0.22);
+
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --radius-full: 9999px;
+
+            --ease: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            background: var(--white);
+        }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 0 20px;
+            background: rgba(8,6,20,0.88);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--dark-border);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--white);
+        }
+        .logo span {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links {
+            display: flex;
+            gap: 4px;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-white-muted);
+            font-weight: 500;
+            font-size: 0.93rem;
+            padding: 8px 14px;
+            border-radius: var(--radius-full);
+            transition: all 0.25s var(--ease);
+        }
+        .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.07); }
+        .nav-cta {
+            background: var(--gradient) !important;
+            color: var(--white) !important;
+            padding: 9px 22px !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 16px rgba(124,58,237,0.4) !important;
+        }
+        .nav-cta:hover { transform: translateY(-1px) !important; box-shadow: 0 8px 24px rgba(124,58,237,0.5) !important; }
+        .mobile-menu-toggle {
+            display: none;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.14);
+            border-radius: var(--radius-sm);
+            color: var(--white);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 7px 12px;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            min-height: 100vh;
+            background: var(--dark-bg);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 120px 20px 80px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 55% at 50% -10%, rgba(124,58,237,0.45) 0%, transparent 60%),
+                radial-gradient(ellipse 40% 40% at 85% 55%, rgba(6,182,212,0.12) 0%, transparent 50%),
+                radial-gradient(ellipse 30% 40% at 10% 80%, rgba(159,103,255,0.18) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+        }
+        .hero .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(124,58,237,0.14);
+            border: 1px solid rgba(124,58,237,0.28);
+            border-radius: var(--radius-full);
+            padding: 6px 16px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin-bottom: 24px;
+            width: fit-content;
+        }
+        .hero-badge::before {
+            content: '';
+            width: 6px; height: 6px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--primary-light);
+            animation: blink 2s ease-in-out infinite;
+        }
+        @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
+        .hero-content h1 {
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            color: var(--text-white);
+            margin-bottom: 20px;
+        }
+        .hero-content h1 .highlight {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-content > p {
+            font-size: 1.12rem;
+            color: var(--text-white-muted);
+            line-height: 1.8;
+            margin-bottom: 40px;
+            max-width: 480px;
+        }
+        .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 30px;
+            background: var(--gradient);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-full);
+            font-size: 0.97rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.25s var(--ease);
+            box-shadow: 0 8px 24px rgba(124,58,237,0.4);
+            font-family: inherit;
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(124,58,237,0.5); }
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 30px;
+            background: rgba(255,255,255,0.06);
+            color: var(--text-white);
+            border: 1px solid rgba(255,255,255,0.14);
+            border-radius: var(--radius-full);
+            font-size: 0.97rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.25s var(--ease);
+            font-family: inherit;
+        }
+        .btn-secondary:hover { background: rgba(255,255,255,0.11); border-color: rgba(255,255,255,0.28); }
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 48px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.07);
+        }
+        .hero-stat-value { font-size: 2rem; font-weight: 800; color: var(--text-white); letter-spacing: -0.5px; }
+        .hero-stat-label { font-size: 0.82rem; color: var(--text-white-muted); margin-top: 2px; }
+
+        /* hero floating cards */
+        .hero-visual { display: flex; align-items: center; justify-content: center; }
+        .cards-stack { display: flex; flex-direction: column; gap: 16px; width: 100%; max-width: 420px; }
+        .floating-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: var(--radius-lg);
+            padding: 18px 22px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .fc-icon {
+            width: 46px; height: 46px;
+            background: var(--gradient);
+            border-radius: var(--radius-md);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .fc-icon svg { width: 22px; height: 22px; stroke: white; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .fc-text h4 { color: var(--text-white); font-size: 0.92rem; font-weight: 700; margin-bottom: 2px; }
+        .fc-text p { color: var(--text-white-muted); font-size: 0.8rem; }
+        .fc1 { animation: fcfloat 6s ease-in-out infinite; }
+        .fc2 { animation: fcfloat 6s ease-in-out infinite 2s; }
+        .fc3 { animation: fcfloat 6s ease-in-out infinite 4s; }
+        @keyframes fcfloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+
+        /* ── FORM SECTION ── */
+        .form-section { background: var(--light-bg); padding: 80px 20px; }
+        .lead-form-container {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: 52px;
+            box-shadow: var(--shadow-lg);
+            max-width: 700px;
+            margin: 0 auto;
+            border: 1px solid var(--border);
+        }
+        .form-header { text-align: center; margin-bottom: 36px; }
+        .eyebrow {
+            color: var(--primary);
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .form-header h2 {
+            color: var(--text-dark);
+            font-size: 1.9rem;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            margin-bottom: 8px;
+        }
+        .form-header p { color: var(--text-body); font-size: 0.95rem; }
+        .form-group { margin-bottom: 20px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        label { display: block; margin-bottom: 7px; color: var(--text-dark); font-weight: 600; font-size: 0.88rem; }
+        input, select, textarea {
+            width: 100%;
+            padding: 13px 16px;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-md);
+            font-size: 0.93rem;
+            transition: all 0.2s var(--ease);
+            font-family: inherit;
+            color: var(--text-dark);
+            background: var(--white);
+        }
+        input::placeholder, textarea::placeholder { color: var(--text-muted); }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(124,58,237,0.1);
+        }
+        .email-error, .email-validating { font-size: 0.8rem; margin-top: 5px; display: none; }
+        .email-error { color: var(--error); }
+        .email-validating { color: var(--primary); }
+        .checkbox-group { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 14px;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.2s var(--ease);
+        }
+        .checkbox-item:has(input:checked) { border-color: var(--primary); background: rgba(124,58,237,0.05); }
+        .checkbox-item input[type="checkbox"] { width: 16px; height: 16px; margin: 0; padding: 0; accent-color: var(--primary); cursor: pointer; flex-shrink: 0; }
+        .checkbox-item label { margin: 0; font-weight: 500; font-size: 0.85rem; color: var(--text-body); cursor: pointer; }
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--gradient);
+            color: white;
+            border: none;
+            border-radius: var(--radius-full);
+            font-size: 0.97rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.25s var(--ease);
+            box-shadow: 0 8px 24px rgba(124,58,237,0.35);
+            font-family: inherit;
+            letter-spacing: 0.2px;
+        }
+        .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(124,58,237,0.45); }
+        .success-message { display: none; text-align: center; padding: 48px 20px; }
+        .success-message.show { display: block; }
+        .success-icon {
+            width: 68px; height: 68px;
+            background: linear-gradient(135deg, #10B981, #059669);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 22px;
+            font-size: 1.8rem;
+        }
+
+        /* ── SHARED SECTION STYLES ── */
+        .section-eyebrow { text-align: center; color: var(--primary); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; }
+        .section-title {
+            text-align: center;
+            font-size: clamp(1.8rem, 4vw, 2.7rem);
+            font-weight: 800;
+            letter-spacing: -0.8px;
+            color: var(--text-dark);
+            margin-bottom: 14px;
+            line-height: 1.2;
+        }
+        .section-sub {
+            text-align: center;
+            color: var(--text-body);
+            font-size: 1.03rem;
+            max-width: 540px;
+            margin: 0 auto 56px;
+            line-height: 1.7;
+        }
+
+        /* ── SERVICES ── */
+        .services-section { padding: 100px 20px; background: var(--white); }
+        .inner { max-width: 1200px; margin: 0 auto; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+        .service-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 34px;
+            transition: all 0.28s var(--ease);
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--gradient);
+            opacity: 0;
+            transition: opacity 0.28s var(--ease);
+        }
+        .service-card:hover { border-color: rgba(124,58,237,0.2); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+        .service-card:hover::after { opacity: 1; }
+        .service-icon {
+            width: 52px; height: 52px;
+            background: var(--light-bg);
+            border-radius: var(--radius-md);
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 22px;
+            transition: background 0.28s var(--ease);
+        }
+        .service-card:hover .service-icon { background: var(--gradient); }
+        .service-icon svg { width: 24px; height: 24px; stroke: var(--primary); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.28s var(--ease); }
+        .service-card:hover .service-icon svg { stroke: white; }
+        .service-card h3 { font-size: 1.12rem; font-weight: 700; color: var(--text-dark); margin-bottom: 10px; letter-spacing: -0.2px; }
+        .service-card p { color: var(--text-body); font-size: 0.9rem; line-height: 1.75; }
+
+        /* ── TRUST ── */
+        .trust-section { background: var(--dark-bg); padding: 80px 20px; position: relative; overflow: hidden; }
+        .trust-section::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(124,58,237,0.18) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .trust-section .section-title { color: var(--text-white); }
+        .trust-section .section-sub { color: var(--text-white-muted); }
+        .trust-badges { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; max-width: 860px; margin: 0 auto; }
+        .trust-badge {
+            flex: 1; min-width: 190px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: var(--radius-lg);
+            padding: 38px 28px;
+            text-align: center;
+            transition: all 0.28s var(--ease);
+        }
+        .trust-badge:hover { background: rgba(124,58,237,0.09); border-color: rgba(124,58,237,0.28); transform: translateY(-4px); }
+        .trust-number {
+            font-size: 3rem; font-weight: 800; letter-spacing: -1px;
+            background: var(--gradient);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            margin-bottom: 8px;
+        }
+        .trust-label { color: var(--text-white-muted); font-size: 0.88rem; font-weight: 500; }
+
+        /* ── BLOG ── */
+        .blog-section { padding: 100px 20px; background: var(--light-bg); }
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+        .blog-card { background: var(--white); border-radius: var(--radius-lg); overflow: hidden; border: 1.5px solid var(--border); transition: all 0.28s var(--ease); cursor: pointer; }
+        .blog-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: rgba(124,58,237,0.18); }
+        .blog-image { width: 100%; height: 190px; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; }
+        .bi1 { background: linear-gradient(135deg, #1E1B4B, #4338CA); }
+        .bi2 { background: linear-gradient(135deg, #1B1F4B, #2563EB); }
+        .bi3 { background: linear-gradient(135deg, #1B3A4B, #0891B2); }
+        .bi4 { background: linear-gradient(135deg, #2D1B4B, #7C3AED); }
+        .bi5 { background: linear-gradient(135deg, #1B4B2D, #059669); }
+        .bi6 { background: linear-gradient(135deg, #4B2D1B, #B45309); }
+        .blog-content { padding: 26px; }
+        .blog-category { color: var(--primary); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; }
+        .blog-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; letter-spacing: -0.2px; line-height: 1.4; }
+        .blog-excerpt { color: var(--text-body); font-size: 0.87rem; margin-bottom: 14px; line-height: 1.65; }
+        .blog-meta { display: flex; gap: 16px; color: var(--text-muted); font-size: 0.8rem; font-weight: 500; padding-top: 14px; border-top: 1px solid var(--border); }
+
+        /* ── CAREERS ── */
+        .careers-section { padding: 100px 20px; background: var(--white); }
+        .jobs-grid { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+        .job-card { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius-lg); padding: 30px; transition: all 0.25s var(--ease); cursor: pointer; }
+        .job-card:hover { border-color: var(--primary); box-shadow: var(--shadow-md); transform: translateX(4px); }
+        .job-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px; }
+        .job-title { font-size: 1.15rem; font-weight: 700; color: var(--text-dark); letter-spacing: -0.2px; }
+        .job-type { background: rgba(124,58,237,0.08); color: var(--primary); padding: 4px 14px; border-radius: var(--radius-full); font-size: 0.78rem; font-weight: 700; border: 1px solid rgba(124,58,237,0.18); }
+        .job-details { display: flex; gap: 18px; color: var(--text-body); font-size: 0.86rem; margin-bottom: 12px; flex-wrap: wrap; font-weight: 500; }
+        .job-description { color: var(--text-body); line-height: 1.7; margin-bottom: 18px; font-size: 0.9rem; }
+        .apply-btn { background: var(--gradient); color: white; padding: 10px 24px; border: none; border-radius: var(--radius-full); font-weight: 700; font-size: 0.86rem; cursor: pointer; transition: all 0.25s var(--ease); font-family: inherit; box-shadow: 0 4px 14px rgba(124,58,237,0.3); }
+        .apply-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(124,58,237,0.4); }
+
+        /* ── CTA ── */
+        .cta-section { background: var(--dark-bg); padding: 100px 20px; text-align: center; position: relative; overflow: hidden; }
+        .cta-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(124,58,237,0.22) 0%, transparent 70%); }
+        .cta-inner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
+        .cta-section h2 { font-size: clamp(2rem, 4vw, 2.9rem); font-weight: 800; color: var(--text-white); letter-spacing: -1px; margin-bottom: 18px; line-height: 1.2; }
+        .cta-section p { font-size: 1.05rem; color: var(--text-white-muted); margin-bottom: 38px; line-height: 1.7; }
+
+        /* ── FOOTER ── */
+        footer { background: #040209; color: var(--text-white-muted); padding: 76px 20px 30px; border-top: 1px solid rgba(255,255,255,0.04); }
+        .footer-content { max-width: 1200px; margin: 0 auto 56px; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; }
+        .footer-brand p { color: var(--text-white-muted); line-height: 1.75; font-size: 0.88rem; max-width: 270px; margin-top: 14px; }
+        .footer-section h3 { color: var(--text-white); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 18px; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 11px; }
+        .footer-links a { color: var(--text-white-muted); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--primary-light); }
+        .footer-links li { font-size: 0.88rem; }
+        .footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
+        .footer-bottom p, .footer-bottom a { font-size: 0.82rem; color: var(--text-white-muted); text-decoration: none; }
+        .footer-bottom a:hover { color: var(--primary-light); }
+
+        /* ── MESSAGE WIDGET ── */
+        .message-widget { position: fixed; bottom: 106px; right: 26px; z-index: 999; }
+        .message-button { width: 54px; height: 54px; border-radius: 50%; background: linear-gradient(135deg, #10B981, #059669); border: none; cursor: pointer; box-shadow: 0 6px 20px rgba(16,185,129,0.4); display: flex; align-items: center; justify-content: center; transition: all 0.25s var(--ease); }
+        .message-button:hover { transform: scale(1.1); box-shadow: 0 10px 28px rgba(16,185,129,0.5); }
+        .message-button svg { width: 24px; height: 24px; fill: white; }
+        .message-form-window { position: fixed; bottom: 174px; right: 26px; width: 350px; background: var(--white); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); display: none; flex-direction: column; overflow: hidden; border: 1px solid var(--border); }
+        .message-form-window.active { display: flex; animation: slideUp 0.28s var(--ease); }
+        .message-form-header { background: linear-gradient(135deg, #10B981, #059669); color: white; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .message-form-header h3 { font-size: 0.97rem; font-weight: 700; }
+        .message-form-body { padding: 22px; }
+        .message-form-group { margin-bottom: 13px; }
+        .message-form-group label { font-size: 0.83rem; margin-bottom: 5px; }
+        .message-form-group input, .message-form-group textarea { padding: 9px 13px; font-size: 0.88rem; border-radius: var(--radius-md); }
+        .message-form-group input:focus, .message-form-group textarea:focus { border-color: #10B981; box-shadow: 0 0 0 3px rgba(16,185,129,0.1); }
+        .message-form-group textarea { resize: vertical; min-height: 88px; }
+        .message-submit-btn { width: 100%; padding: 11px; background: linear-gradient(135deg, #10B981, #059669); color: white; border: none; border-radius: var(--radius-full); font-weight: 700; font-size: 0.88rem; cursor: pointer; transition: all 0.22s var(--ease); font-family: inherit; }
+        .message-submit-btn:hover { transform: translateY(-1px); box-shadow: 0 5px 14px rgba(16,185,129,0.32); }
+        .message-success { display: none; text-align: center; padding: 28px; }
+        .message-success.show { display: block; }
+        [data-fs-success].show { display: block !important; }
+        .message-success-icon { font-size: 2.4rem; margin-bottom: 10px; }
+
+        /* ── CHAT WIDGET ── */
+        .chat-widget { position: fixed; bottom: 26px; right: 26px; z-index: 1000; }
+        .chat-button { width: 58px; height: 58px; border-radius: 50%; background: var(--gradient); border: none; cursor: pointer; box-shadow: 0 8px 22px rgba(124,58,237,0.45); display: flex; align-items: center; justify-content: center; transition: all 0.25s var(--ease); }
+        .chat-button:hover { transform: scale(1.08); box-shadow: 0 14px 30px rgba(124,58,237,0.55); }
+        .chat-button svg { width: 26px; height: 26px; fill: white; }
+        .chat-notification { position: absolute; top: -4px; right: -4px; width: 20px; height: 20px; background: #EF4444; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.68rem; font-weight: 700; color: white; animation: cpulse 2s ease-in-out infinite; border: 2px solid white; }
+        @keyframes cpulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.14)} }
+        .chat-window { position: fixed; bottom: 98px; right: 26px; width: 350px; height: 510px; background: var(--white); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); display: none; flex-direction: column; overflow: hidden; border: 1px solid var(--border); }
+        .chat-window.active { display: flex; animation: slideUp 0.28s var(--ease); }
+        @keyframes slideUp { from{opacity:0;transform:translateY(14px) scale(0.98)} to{opacity:1;transform:translateY(0) scale(1)} }
+        .chat-header { background: var(--gradient); color: white; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .chat-header-info h3 { font-size: 0.97rem; font-weight: 700; }
+        .chat-header-info p { font-size: 0.78rem; opacity: 0.85; margin: 3px 0 0; }
+        .online-dot { width: 7px; height: 7px; background: #10B981; border-radius: 50%; display: inline-block; margin-right: 5px; box-shadow: 0 0 6px #10B981; }
+        .chat-close { background: rgba(255,255,255,0.14); border: none; color: white; font-size: 1.1rem; cursor: pointer; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+        .chat-close:hover { background: rgba(255,255,255,0.24); }
+        .chat-messages { flex: 1; padding: 18px; overflow-y: auto; background: var(--light-bg); display: flex; flex-direction: column; gap: 10px; }
+        .message { display: flex; }
+        .message.bot { justify-content: flex-start; }
+        .message.user { justify-content: flex-end; }
+        .message-content { max-width: 78%; padding: 10px 14px; border-radius: 14px; font-size: 0.86rem; line-height: 1.5; }
+        .message.bot .message-content { background: var(--white); color: var(--text-dark); border-bottom-left-radius: 4px; border: 1px solid var(--border); }
+        .message.user .message-content { background: var(--gradient); color: white; border-bottom-right-radius: 4px; }
+        .quick-replies { display: flex; flex-wrap: wrap; gap: 7px; }
+        .quick-reply-btn { background: var(--white); border: 1.5px solid var(--primary); color: var(--primary); padding: 6px 13px; border-radius: var(--radius-full); font-size: 0.78rem; font-weight: 600; cursor: pointer; transition: all 0.2s var(--ease); font-family: inherit; }
+        .quick-reply-btn:hover { background: var(--primary); color: white; }
+        .chat-input-area { padding: 13px; background: var(--white); border-top: 1px solid var(--border); display: flex; gap: 9px; align-items: center; }
+        .chat-input { flex: 1; padding: 9px 15px; border: 1.5px solid var(--border); border-radius: var(--radius-full); font-size: 0.86rem; outline: none; font-family: inherit; transition: border-color 0.2s; }
+        .chat-input:focus { border-color: var(--primary); }
+        .chat-send-btn { width: 38px; height: 38px; border-radius: 50%; background: var(--gradient); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.2s; box-shadow: 0 4px 12px rgba(124,58,237,0.3); }
+        .chat-send-btn:hover { transform: scale(1.08); }
+        .chat-send-btn svg { width: 17px; height: 17px; fill: white; }
+        .typing-indicator { display: none; padding: 10px 14px; background: var(--white); border-radius: 14px; border-bottom-left-radius: 4px; width: fit-content; border: 1px solid var(--border); }
+        .typing-indicator.active { display: block; }
+        .typing-dots { display: flex; gap: 4px; align-items: center; }
+        .typing-dots span { width: 6px; height: 6px; background: var(--primary); border-radius: 50%; animation: tdot 1.4s infinite; opacity: 0.5; }
+        .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes tdot { 0%,60%,100%{transform:translateY(0)} 30%{transform:translateY(-6px);opacity:1} }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1024px) {
+            .footer-content { grid-template-columns: 1fr 1fr; gap: 36px; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(8,6,20,0.97); backdrop-filter: blur(20px); flex-direction: column; padding: 14px; border-top: 1px solid var(--dark-border); gap: 2px; }
+            .nav-links.active { display: flex; }
+            .mobile-menu-toggle { display: block; }
+            .hero .container { grid-template-columns: 1fr; text-align: center; gap: 0; }
+            .hero-badge { margin: 0 auto 22px; }
+            .hero-content > p { max-width: 100%; }
+            .hero-actions { justify-content: center; }
+            .hero-stats { justify-content: center; gap: 28px; }
+            .hero-visual { display: none; }
+            .lead-form-container { padding: 30px 20px; }
+            .form-row { grid-template-columns: 1fr; }
+            .checkbox-group { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; gap: 28px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .message-form-window, .chat-window { width: calc(100vw - 18px); right: 9px; }
+            .chat-window { height: calc(100vh - 110px); bottom: 88px; }
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">Valued<span>HR</span></div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact" class="nav-cta">Get Started</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">Now Offering Personal AI Clone Technology</div>
+            <h1>Transform Your Business with <span class="highlight">AI & Human</span> Solutions</h1>
+            <p>Custom AI assistants, professional virtual assistants, web design, and digital marketing services that scale with your business.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">
+                    Get Free Consultation
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#services" class="btn-secondary">Explore Services</a>
+            </div>
+            <div class="hero-stats">
+                <div><div class="hero-stat-value">500+</div><div class="hero-stat-label">Happy Clients</div></div>
+                <div><div class="hero-stat-value">98%</div><div class="hero-stat-label">Satisfaction Rate</div></div>
+                <div><div class="hero-stat-value">24/7</div><div class="hero-stat-label">Support Available</div></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="cards-stack">
+                <div class="floating-card fc1">
+                    <div class="fc-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                    <div class="fc-text"><h4>Human Virtual Assistants</h4><p>USA-based &amp; offshore professionals</p></div>
+                </div>
+                <div class="floating-card fc2">
+                    <div class="fc-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+                    <div class="fc-text"><h4>Web Design &amp; Development</h4><p>Conversion-optimized websites</p></div>
+                </div>
+                <div class="floating-card fc3">
+                    <div class="fc-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                    <div class="fc-text"><h4>Custom AI Solutions</h4><p>AI clones &amp; virtual assistants</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lead Form -->
+<div class="form-section" id="contact">
+    <div class="lead-form-container">
+        <div class="form-header">
+            <div class="eyebrow">Free Consultation</div>
+            <h2>Let's Build Your Solution</h2>
+            <p>Tell us about your needs and we'll create a customized plan</p>
+        </div>
+        <form id="leadForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" placeholder="Your Company Inc." data-fs-field>
+                </div>
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="John Smith" data-fs-field>
+                    <span data-fs-error="name" style="color:#EF4444;font-size:0.8rem;"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Company Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="john@company.com" data-fs-field>
+                    <div class="email-error" id="emailError"></div>
+                    <div class="email-validating" id="emailValidating">Validating email...</div>
+                    <span data-fs-error="email" style="color:#EF4444;font-size:0.8rem;"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567" data-fs-field>
+                    <span data-fs-error="phone" style="color:#EF4444;font-size:0.8rem;"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Services You're Interested In: *</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item"><input type="checkbox" id="human-va" name="interests" value="human-va" data-fs-field><label for="human-va">Virtual Assistants</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="ai-assistant" name="interests" value="ai-assistant" data-fs-field><label for="ai-assistant">AI Virtual Assistant</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="ai-clone" name="interests" value="ai-clone" data-fs-field><label for="ai-clone">Personal AI Clone</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="web-design" name="interests" value="web-design" data-fs-field><label for="web-design">Web Design</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="social-media" name="interests" value="social-media" data-fs-field><label for="social-media">Social Media Marketing</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="customer-service" name="interests" value="customer-service" data-fs-field><label for="customer-service">Customer Service</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="web-apps" name="interests" value="web-apps" data-fs-field><label for="web-apps">Custom Web Apps</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="lead-gen" name="interests" value="lead-gen" data-fs-field><label for="lead-gen">Lead Generation</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="linkedin-opt" name="interests" value="linkedin-opt" data-fs-field><label for="linkedin-opt">LinkedIn Optimization</label></div>
+                </div>
+                <span data-fs-error="interests" style="color:#EF4444;font-size:0.8rem;"></span>
+            </div>
+            <div class="form-group">
+                <label for="team-size">Estimated Team Size Needed</label>
+                <select id="team-size" name="team-size" data-fs-field>
+                    <option value="">Select an option</option>
+                    <option value="1">1 person</option>
+                    <option value="2-3">2-3 people</option>
+                    <option value="4-10">4-10 people</option>
+                    <option value="10+">10+ people</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Tell us about your needs</label>
+                <textarea id="message" name="message" rows="4" placeholder="Describe your requirements..." data-fs-field></textarea>
+                <span data-fs-error="message" style="color:#EF4444;font-size:0.8rem;"></span>
+            </div>
+            <div data-fs-error style="display:none;color:#EF4444;padding:11px 15px;margin-bottom:14px;background:#FEF2F2;border-radius:10px;font-size:0.86rem;border:1px solid #FECACA;"></div>
+            <button type="submit" class="submit-btn" data-fs-submit-btn>Get My Free Consultation →</button>
+        </form>
+        <div class="success-message" id="successMessage">
+            <div class="success-icon">✓</div>
+            <h3 style="color:var(--text-dark);margin-bottom:10px;font-size:1.4rem;letter-spacing:-0.3px;">Thank You!</h3>
+            <p style="color:var(--text-body);">We've received your information and will contact you within 24 hours.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Services -->
+<section class="services-section" id="services">
+    <div class="inner">
+        <div class="section-eyebrow">What We Offer</div>
+        <h2 class="section-title">Comprehensive Solutions for<br>Modern Businesses</h2>
+        <p class="section-sub">Everything your business needs to scale — from human expertise to cutting-edge AI technology.</p>
+        <div class="services-grid">
+
+            <article class="service-card">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                <h3>Human Virtual Assistants</h3>
+                <p><strong>USA-Based:</strong> Native English speakers for premium, high-touch interactions.<br><br><strong>Offshore:</strong> Skilled professionals from the Philippines, Latin America &amp; India. Save 40–60% while maintaining quality.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 15h.01M12 15h.01M16 15h.01"/></svg></div>
+                <h3>Custom AI Virtual Assistants</h3>
+                <p>AI assistants built for your business. Automate scheduling, email, data entry, and customer inquiries — available 24/7 with seamless workflow integration.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+                <h3>Personal AI Clones</h3>
+                <p>Revolutionary AI that learns your communication style, decision-making patterns, and business expertise — handling routine tasks exactly as you would.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+                <h3>Website Design &amp; Development</h3>
+                <p>Professional, conversion-optimized websites on modern platforms. From landing pages to full e-commerce — digital experiences that drive real results.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg></div>
+                <h3>Social Media Marketing</h3>
+                <p>Strategic social media management that builds your brand and drives engagement. Content creation, scheduling, community management, and advertising across all major platforms.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                <h3>Customer Service Solutions</h3>
+                <p>Hybrid customer service combining AI chatbots for instant responses with human agents for complex issues — across phone, email, chat, and social media.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                <h3>Custom Web Applications</h3>
+                <p>Bespoke web-based tools for your specific business processes. CRM systems, dashboards, automation tools, and integrations that streamline operations.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+                <h3>Lead Generation Services</h3>
+                <p>Data-driven campaigns that fill your pipeline with qualified prospects. Strategic outreach, landing page optimization, email campaigns, and conversion tracking.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+                <h3>LinkedIn Page Optimization</h3>
+                <p>Transform your LinkedIn into a lead generation machine. Profile optimization, content strategy, and engagement tactics that position you as an industry leader.</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- Trust -->
+<section class="trust-section">
+    <div class="inner" style="position:relative;z-index:1;">
+        <div class="section-eyebrow" style="color:var(--primary-light);">Our Track Record</div>
+        <h2 class="section-title" style="color:var(--text-white);">Trusted by Growing Businesses</h2>
+        <p class="section-sub" style="color:var(--text-white-muted);margin-bottom:48px;">Hundreds of businesses rely on ValuedHR to power their growth every day.</p>
+        <div class="trust-badges">
+            <div class="trust-badge"><div class="trust-number">500+</div><div class="trust-label">Happy Clients</div></div>
+            <div class="trust-badge"><div class="trust-number">98%</div><div class="trust-label">Satisfaction Rate</div></div>
+            <div class="trust-badge"><div class="trust-number">24/7</div><div class="trust-label">Available Support</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog -->
+<section class="blog-section" id="blog">
+    <div class="inner">
+        <div class="section-eyebrow">Knowledge Hub</div>
+        <h2 class="section-title">Latest Insights on AI, VAs &amp; Digital Growth</h2>
+        <p class="section-sub">Expert perspectives on virtual assistants, AI solutions, and scaling your business.</p>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-image bi1">📊</div>
+                <div class="blog-content">
+                    <div class="blog-category">Customer Service</div>
+                    <h3>5 Signs Your Business Needs Outsourced Customer Service</h3>
+                    <p class="blog-excerpt">Discover the key indicators that it's time to scale your customer support with professional outsourcing solutions.</p>
+                    <div class="blog-meta"><span>May 20, 2024</span><span>5 min read</span></div>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image bi2">💼</div>
+                <div class="blog-content">
+                    <div class="blog-category">Virtual Assistants</div>
+                    <h3>How Virtual Assistants Can Transform Your Productivity</h3>
+                    <p class="blog-excerpt">Learn how hiring a virtual assistant can free up your time to focus on growing your business and increasing revenue.</p>
+                    <div class="blog-meta"><span>May 15, 2024</span><span>7 min read</span></div>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image bi3">🎯</div>
+                <div class="blog-content">
+                    <div class="blog-category">Best Practices</div>
+                    <h3>The ROI of Exceptional Customer Service in 2025</h3>
+                    <p class="blog-excerpt">Data-driven insights on how quality customer service directly impacts retention and business growth.</p>
+                    <div class="blog-meta"><span>May 10, 2024</span><span>6 min read</span></div>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image bi4">🚀</div>
+                <div class="blog-content">
+                    <div class="blog-category">Growth Strategy</div>
+                    <h3>Scaling Customer Support: In-House vs Outsourced</h3>
+                    <p class="blog-excerpt">A comprehensive comparison to help you decide the best customer service strategy for your growing business.</p>
+                    <div class="blog-meta"><span>May 5, 2024</span><span>8 min read</span></div>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image bi5">💡</div>
+                <div class="blog-content">
+                    <div class="blog-category">Tips &amp; Tricks</div>
+                    <h3>10 Tasks to Delegate to Your Virtual Assistant Today</h3>
+                    <p class="blog-excerpt">Maximize efficiency by delegating these time-consuming tasks to a skilled virtual assistant.</p>
+                    <div class="blog-meta"><span>April 28, 2024</span><span>5 min read</span></div>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image bi6">🌟</div>
+                <div class="blog-content">
+                    <div class="blog-category">Success Stories</div>
+                    <h3>How E-commerce Brands Improve Support with ValuedHR</h3>
+                    <p class="blog-excerpt">Real case studies showing how online retailers transformed their customer experience with our team.</p>
+                    <div class="blog-meta"><span>April 22, 2024</span><span>9 min read</span></div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Careers -->
+<section class="careers-section" id="careers">
+    <div class="inner">
+        <div class="section-eyebrow">Join the Team</div>
+        <h2 class="section-title">Work With Top Talent</h2>
+        <p class="section-sub">We're always looking for passionate professionals who excel at delivering exceptional results.</p>
+        <div class="jobs-grid">
+            <article class="job-card">
+                <div class="job-header"><h3 class="job-title">Customer Service Representative</h3><span class="job-type">Full-Time</span></div>
+                <div class="job-details"><span>📍 Remote</span><span>💰 Competitive Salary</span><span>🕐 Flexible Hours</span></div>
+                <p class="job-description">Experienced customer service representatives who excel at communication and problem-solving, handling inquiries via phone, email, and chat for multiple clients.</p>
+                <button class="apply-btn" onclick="scrollToForm()">Apply Now →</button>
+            </article>
+            <article class="job-card">
+                <div class="job-header"><h3 class="job-title">Virtual Assistant</h3><span class="job-type">Full-Time</span></div>
+                <div class="job-details"><span>📍 Remote</span><span>💰 $15–25/hour</span><span>⏰ Day Shift</span></div>
+                <p class="job-description">Administrative support, scheduling, email management, and project coordination for our clients. Strong organizational skills required.</p>
+                <button class="apply-btn" onclick="scrollToForm()">Apply Now →</button>
+            </article>
+            <article class="job-card">
+                <div class="job-header"><h3 class="job-title">Senior Customer Support Specialist</h3><span class="job-type">Full-Time</span></div>
+                <div class="job-details"><span>📍 Remote</span><span>💰 $20–30/hour</span><span>🌟 Growth Opportunity</span></div>
+                <p class="job-description">Handle escalated issues and mentor junior team members. 3+ years of customer service experience required.</p>
+                <button class="apply-btn" onclick="scrollToForm()">Apply Now →</button>
+            </article>
+            <article class="job-card">
+                <div class="job-header"><h3 class="job-title">Technical Support Representative</h3><span class="job-type">Full-Time</span></div>
+                <div class="job-details"><span>📍 Remote</span><span>💰 $18–28/hour</span><span>🔧 Tech-Focused</span></div>
+                <p class="job-description">Provide technical support for SaaS and tech clients. Strong troubleshooting skills required. Training provided for specific platforms.</p>
+                <button class="apply-btn" onclick="scrollToForm()">Apply Now →</button>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="cta-inner">
+        <div class="section-eyebrow" style="color:var(--primary-light);">Ready to Scale?</div>
+        <h2>Transform Your Business with AI &amp; Human Expertise</h2>
+        <p>Join hundreds of businesses leveraging our comprehensive solutions for growth and efficiency.</p>
+        <a href="#contact" class="btn-primary" style="display:inline-flex;">
+            Get Your Free Consultation
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="logo">Valued<span>HR</span></div>
+            <p>Comprehensive AI and human solutions for modern businesses — from virtual assistants to custom AI development and digital marketing.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul class="footer-links">
+                <li><a href="#services">Virtual Assistants</a></li>
+                <li><a href="#services">AI Virtual Assistants</a></li>
+                <li><a href="#services">Personal AI Clones</a></li>
+                <li><a href="#services">Web Design &amp; Dev</a></li>
+                <li><a href="#services">Social Media Marketing</a></li>
+                <li><a href="#services">Customer Service</a></li>
+                <li><a href="#services">Custom Web Apps</a></li>
+                <li><a href="#services">Lead Generation</a></li>
+                <li><a href="#services">LinkedIn Optimization</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul class="footer-links">
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul class="footer-links">
+                <li>hello@valuedhr.com</li>
+                <li>(555) 123-4567</li>
+                <li>Mon–Fri, 9AM–6PM EST</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 ValuedHR. All rights reserved.</p>
+        <p><a href="#privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="#terms">Terms of Service</a></p>
+    </div>
+</footer>
+
+<!-- Message Widget -->
+<div class="message-widget">
+    <button class="message-button" id="messageButton" aria-label="Leave a message">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    </button>
+    <div class="message-form-window" id="messageFormWindow">
+        <div class="message-form-header">
+            <h3>Leave Us a Message</h3>
+            <button class="chat-close" id="messageClose">×</button>
+        </div>
+        <div class="message-form-body">
+            <div data-fs-success class="message-success" id="messageSuccess">
+                <div class="message-success-icon">✓</div>
+                <h4 style="color:#10B981;margin-bottom:6px;">Message Sent!</h4>
+                <p style="color:var(--text-body);font-size:0.86rem;">We'll get back to you within 24 hours.</p>
+            </div>
+            <div data-fs-error style="display:none;color:#EF4444;padding:10px;margin-bottom:11px;background:#FEF2F2;border-radius:10px;font-size:0.83rem;"></div>
+            <form id="messageForm">
+                <div class="message-form-group"><label for="msg-name">Name *</label><input type="text" id="msg-name" name="name" required placeholder="Your name" data-fs-field><span data-fs-error="name" style="color:#EF4444;font-size:0.8rem;"></span></div>
+                <div class="message-form-group"><label for="msg-email">Email *</label><input type="email" id="msg-email" name="email" required placeholder="your@email.com" data-fs-field><span data-fs-error="email" style="color:#EF4444;font-size:0.8rem;"></span></div>
+                <div class="message-form-group"><label for="msg-phone">Phone</label><input type="tel" id="msg-phone" name="phone" placeholder="(555) 123-4567" data-fs-field></div>
+                <div class="message-form-group"><label for="msg-content">Message *</label><textarea id="msg-content" name="message" required placeholder="How can we help you?" data-fs-field></textarea><span data-fs-error="message" style="color:#EF4444;font-size:0.8rem;"></span></div>
+                <button type="submit" class="message-submit-btn" data-fs-submit-btn>Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Chat Widget -->
+<div class="chat-widget">
+    <button class="chat-button" id="chatButton" aria-label="Open chat">
+        <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+        <span class="chat-notification">1</span>
+    </button>
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <h3><span class="online-dot"></span>Chat with us!</h3>
+                <p>We typically reply in minutes</p>
+            </div>
+            <button class="chat-close" id="chatClose">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-content">👋 Hi there! I'm here to help you find the perfect solution for your business. We offer virtual assistants, AI solutions, web design, marketing, and more. What brings you to ValuedHR today?</div>
+            </div>
+            <div class="quick-replies">
+                <button class="quick-reply-btn" data-reply="human-va">Virtual Assistants</button>
+                <button class="quick-reply-btn" data-reply="ai-assistant">AI Solutions</button>
+                <button class="quick-reply-btn" data-reply="web-design">Web Design</button>
+                <button class="quick-reply-btn" data-reply="pricing">Pricing Info</button>
+            </div>
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dots"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type your message..." aria-label="Chat message">
+            <button class="chat-send-btn" id="chatSend">
+                <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Formspree -->
+<script>
+    window.formspree = window.formspree || function(){(formspree.q=formspree.q||[]).push(arguments)};
+    formspree('initForm',{formElement:'#messageForm',formId:'mwvzrblb'});
+    formspree('initForm',{formElement:'#leadForm',formId:'mwvzrblb'});
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+<script>
+    const freeEmailDomains=['gmail.com','yahoo.com','hotmail.com','outlook.com','aol.com','icloud.com','mail.com','protonmail.com','zoho.com','yandex.com','gmx.com','inbox.com','live.com','msn.com','yahoo.co.uk','yahoo.ca','yahoo.co.in','googlemail.com','me.com','mac.com'];
+
+    async function validateEmail(email){
+        const inp=document.getElementById('email'),err=document.getElementById('emailError'),val=document.getElementById('emailValidating');
+        err.style.display='none';val.style.display='none';inp.style.borderColor='';
+        if(!email)return false;
+        if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent='Please enter a valid email address';err.style.display='block';inp.style.borderColor='#EF4444';return false;}
+        const domain=email.split('@')[1].toLowerCase();
+        if(freeEmailDomains.includes(domain)){err.textContent='Please use your company email address';err.style.display='block';inp.style.borderColor='#EF4444';return false;}
+        val.style.display='block';
+        await new Promise(r=>setTimeout(r,800));
+        val.style.display='none';
+        const dp=domain.split('.');
+        if(dp.length<2||dp[dp.length-1].length<2){err.textContent='Please enter a valid company email';err.style.display='block';inp.style.borderColor='#EF4444';return false;}
+        inp.style.borderColor='#10B981';return true;
+    }
+
+    document.getElementById('email').addEventListener('blur',function(){validateEmail(this.value);});
+    document.getElementById('email').addEventListener('input',function(){
+        const e=document.getElementById('emailError'),v=document.getElementById('emailValidating');
+        if(e.style.display==='block'||v.style.display==='block'){e.style.display='none';v.style.display='none';this.style.borderColor='';}
+    });
+
+    document.getElementById('leadForm').addEventListener('submit',async function(e){
+        const ok=await validateEmail(document.getElementById('email').value);
+        if(!ok){e.preventDefault();document.getElementById('email').focus();return;}
+        if(!Array.from(document.querySelectorAll('input[name="interests"]:checked')).length){e.preventDefault();alert('Please select at least one service');}
+    });
+
+    const msgBtn=document.getElementById('messageButton'),msgWin=document.getElementById('messageFormWindow'),msgClose=document.getElementById('messageClose');
+    msgBtn.addEventListener('click',()=>msgWin.classList.toggle('active'));
+    msgClose.addEventListener('click',()=>msgWin.classList.remove('active'));
+    document.getElementById('messageForm').addEventListener('formspree-success',function(){setTimeout(()=>{msgWin.classList.remove('active');document.getElementById('messageForm').reset();},3000);});
+
+    document.getElementById('mobileMenuToggle').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('active');});
+
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){
+        e.preventDefault();
+        const t=document.querySelector(this.getAttribute('href'));
+        if(t){t.scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('navLinks').classList.remove('active');}
+    }));
+
+    function scrollToForm(){document.getElementById('contact').scrollIntoView({behavior:'smooth',block:'center'});}
+
+    const chatBtn=document.getElementById('chatButton'),chatWin=document.getElementById('chatWindow'),chatCloseBtn=document.getElementById('chatClose'),chatInput=document.getElementById('chatInput'),chatSend=document.getElementById('chatSend'),chatMessages=document.getElementById('chatMessages'),typingInd=document.getElementById('typingIndicator'),notif=document.querySelector('.chat-notification');
+
+    chatBtn.addEventListener('click',function(){chatWin.classList.toggle('active');if(chatWin.classList.contains('active')){notif.style.display='none';chatInput.focus();}});
+    chatCloseBtn.addEventListener('click',()=>chatWin.classList.remove('active'));
+
+    const botR={'human-va':"Great choice! We offer both USA-based and offshore virtual assistants. USA-based VAs provide premium native English support, while offshore options save you 40-60%. Which interests you?",'ai-assistant':"Excellent! Our AI assistants handle scheduling, emails, data entry, and inquiries 24/7. What would you like to automate?",'ai-clone':"Revolutionary! We'll create an AI clone that learns your communication style. What aspects of your work would you like it to handle?",'web-design':"Perfect! We build conversion-optimized websites. Are you looking for a landing page, full website, or e-commerce?",'social-media':"Awesome! We handle content creation, scheduling, and community management. Which platforms matter most to you?",'customer-service':"Smart! We offer hybrid AI + human support solutions. Do you need phone, email, chat, or all three?",'web-apps':"Great! We build custom web apps tailored to your processes. What would you like to streamline?",'lead-gen':"Excellent! We run strategic outreach and email campaigns. What's your target audience?",'linkedin-opt':"Perfect! We'll transform your LinkedIn into a lead machine. Profile optimization, content strategy, or both?",'pricing':"Our pricing is customized to your needs. Can I get your email to send a personalized quote?",'default':"That's a great question! Fill out the form above or leave us a message and we'll get back to you within 24 hours."};
+
+    function addMessage(text,isUser=false){
+        const d=document.createElement('div');d.className=`message ${isUser?'user':'bot'}`;
+        const c=document.createElement('div');c.className='message-content';c.textContent=text;d.appendChild(c);
+        const qr=document.querySelector('.quick-replies');
+        if(qr&&qr.parentNode===chatMessages)chatMessages.removeChild(qr);
+        chatMessages.insertBefore(d,typingInd);chatMessages.scrollTop=chatMessages.scrollHeight;
+    }
+
+    function showTyping(){typingInd.classList.add('active');chatMessages.scrollTop=chatMessages.scrollHeight;}
+    function hideTyping(){typingInd.classList.remove('active');}
+    function botReply(key){showTyping();setTimeout(()=>{hideTyping();addMessage(botR[key]||botR['default']);},900+Math.random()*800);}
+
+    document.querySelectorAll('.quick-reply-btn').forEach(btn=>btn.addEventListener('click',function(){
+        addMessage(this.textContent,true);
+        const r=this.getAttribute('data-reply');
+        if(r==='form'){showTyping();setTimeout(()=>{hideTyping();addMessage("Please scroll up and fill out the form. We'll reply within 24 hours!");chatWin.classList.remove('active');scrollToForm();},900);}
+        else botReply(r);
+        this.parentElement.remove();
+    }));
+
+    function sendMessage(){
+        const msg=chatInput.value.trim();
+        if(!msg)return;
+        addMessage(msg,true);chatInput.value='';
+        const l=msg.toLowerCase();
+        if(l.includes('price')||l.includes('cost'))botReply('pricing');
+        else if(l.includes('web')&&l.includes('design'))botReply('web-design');
+        else if(l.includes('ai')||l.includes('clone'))botReply('ai-clone');
+        else if(l.includes('virtual')||l.includes('assistant'))botReply('human-va');
+        else if(l.includes('customer')||l.includes('support'))botReply('customer-service');
+        else botReply('default');
+    }
+
+    chatSend.addEventListener('click',sendMessage);
+    chatInput.addEventListener('keypress',e=>{if(e.key==='Enter')sendMessage();});
+</script>
+</body>
+</html>
