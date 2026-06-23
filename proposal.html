@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your ValuedHR Rate Card & Proposal</title>
+  <meta name="description" content="Your personalized ValuedHR rate card — pricing, packages, and next steps." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+  --color-bg: #F8F7F3;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F3F1EC;
+  --color-border: #DDD9D2;
+  --color-divider: #E8E5DF;
+  --color-text: #1A1815;
+  --color-text-muted: #6B6760;
+  --color-text-faint: #B0ADA6;
+  --color-primary: #0A1628;
+  --color-accent: #00888F;
+  --color-accent-hover: #006D73;
+  --color-accent-light: #E0F4F5;
+  --color-gold: #B8860B;
+  --color-gold-light: #FFF8E1;
+  --color-success: #2E7D32;
+  --color-success-light: #E8F5E9;
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+  --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+  --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
+  --space-16: 4rem; --space-20: 5rem;
+  --radius-sm: 0.375rem; --radius-md: 0.625rem; --radius-lg: 1rem;
+  --radius-xl: 1.5rem; --radius-full: 9999px;
+  --shadow-sm: 0 1px 3px rgba(10,22,40,0.06);
+  --shadow-md: 0 4px 14px rgba(10,22,40,0.09);
+  --shadow-lg: 0 12px 36px rgba(10,22,40,0.12);
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', 'Helvetica Neue', sans-serif;
+  --content-wide: 1100px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body { font-family: var(--font-body); font-size: var(--text-base); color: var(--color-text); background: var(--color-bg); line-height: 1.65; }
+img, svg { display: block; max-width: 100%; }
+h1, h2, h3, h4 { text-wrap: balance; line-height: 1.15; }
+p, li { text-wrap: pretty; max-width: 72ch; }
+a { color: inherit; text-decoration: none; }
+
+.container { max-width: var(--content-wide); margin-inline: auto; padding-inline: clamp(var(--space-4), 5vw, var(--space-12)); }
+
+/* ─── BUTTONS ─── */
+.btn { display: inline-flex; align-items: center; gap: var(--space-2); font-weight: 700; font-size: var(--text-sm); border-radius: var(--radius-md); padding: 0.75em 1.6em; transition: all var(--transition); white-space: nowrap; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-family: var(--font-body); }
+.btn-primary { background: var(--color-accent); color: #fff; border-color: var(--color-accent); }
+.btn-primary:hover { background: var(--color-accent-hover); border-color: var(--color-accent-hover); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,136,143,0.3); }
+.btn-outline { background: transparent; color: var(--color-accent); border-color: var(--color-accent); }
+.btn-outline:hover { background: var(--color-accent); color: #fff; transform: translateY(-1px); }
+.btn-dark { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+.btn-dark:hover { background: #162240; transform: translateY(-1px); }
+.btn-lg { font-size: var(--text-base); padding: 0.85em 2em; }
+
+/* ─── HEADER ─── */
+.site-header { background: var(--color-primary); padding: var(--space-4) 0; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
+.logo { display: flex; align-items: center; gap: var(--space-2); }
+.logo-text { font-weight: 800; font-size: var(--text-lg); color: #fff; letter-spacing: -0.01em; }
+
+/* ─── HERO ─── */
+.proposal-hero {
+  background: linear-gradient(160deg, var(--color-primary) 0%, #0d2240 100%);
+  padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+  text-align: center;
+}
+.proposal-hero-inner { max-width: 680px; margin-inline: auto; padding-inline: var(--space-4); }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  background: rgba(0,136,143,0.2); color: #3DD5DB;
+  font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 0.4em 1em; border-radius: var(--radius-full);
+  border: 1px solid rgba(61,213,219,0.3); margin-bottom: var(--space-5);
+}
+.proposal-hero h1 { font-size: var(--text-2xl); font-weight: 800; color: #fff; letter-spacing: -0.02em; margin-bottom: var(--space-4); }
+.proposal-hero h1 em { font-family: var(--font-display); font-style: italic; color: #3DD5DB; }
+.proposal-hero p { font-size: var(--text-base); color: rgba(255,255,255,0.65); margin-inline: auto; }
+.hero-note { display: inline-flex; align-items: center; gap: var(--space-2); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-full); padding: 0.5em 1.2em; font-size: var(--text-xs); color: rgba(255,255,255,0.7); margin-top: var(--space-6); }
+
+/* ─── PACKAGES ─── */
+.packages-section { padding-block: clamp(var(--space-12), 6vw, var(--space-20)); }
+.section-header { text-align: center; margin-bottom: var(--space-12); }
+.section-label { display: inline-block; font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent); margin-bottom: var(--space-3); }
+.section-header h2 { font-size: var(--text-xl); font-weight: 800; color: var(--color-text); letter-spacing: -0.02em; margin-bottom: var(--space-3); }
+.section-header p { font-size: var(--text-base); color: var(--color-text-muted); margin-inline: auto; }
+
+.packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
+@media (max-width: 900px) { .packages-grid { grid-template-columns: 1fr; max-width: 540px; margin-inline: auto; } }
+
+.package-card {
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  display: flex; flex-direction: column; gap: var(--space-5);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.package-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.package-card--featured {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+.package-card--featured .pkg-desc,
+.package-card--featured .pkg-outcomes li,
+.package-card--featured .price-note { color: rgba(255,255,255,0.7); }
+.package-card--featured .price-from { color: rgba(255,255,255,0.5); }
+.package-card--featured .pkg-divider { border-color: rgba(255,255,255,0.15); }
+
+.pkg-badge {
+  display: inline-block; font-size: var(--text-xs); font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  padding: 0.3em 0.8em; border-radius: var(--radius-full);
+  background: var(--color-accent-light); color: var(--color-accent);
+}
+.package-card--featured .pkg-badge { background: rgba(61,213,219,0.2); color: #3DD5DB; }
+
+.pkg-title { font-size: var(--text-lg); font-weight: 800; }
+.pkg-duration { font-size: var(--text-xs); font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.package-card--featured .pkg-duration { color: rgba(255,255,255,0.5); }
+.pkg-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.7; }
+
+.pkg-outcomes { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+.pkg-outcomes li { display: flex; align-items: flex-start; gap: var(--space-2); font-size: var(--text-sm); }
+.pkg-outcomes li svg { flex-shrink: 0; margin-top: 3px; color: var(--color-accent); }
+.package-card--featured .pkg-outcomes li svg { color: #3DD5DB; }
+
+.pkg-divider { border: none; border-top: 1px solid var(--color-divider); margin: 0; }
+
+.pkg-price { display: flex; flex-direction: column; gap: 2px; }
+.price-from { font-size: var(--text-xs); color: var(--color-text-muted); font-weight: 500; }
+.price-num { font-size: clamp(1.75rem, 2.5vw, 2.25rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
+.price-num small { font-size: var(--text-base); font-weight: 600; }
+.price-note { font-size: var(--text-xs); color: var(--color-text-muted); }
+
+.pkg-cta { margin-top: auto; }
+.pkg-cta .btn { width: 100%; justify-content: center; }
+.package-card--featured .pkg-cta .btn-primary { background: #fff; color: var(--color-primary); border-color: #fff; }
+.package-card--featured .pkg-cta .btn-primary:hover { background: rgba(255,255,255,0.9); }
+
+/* ─── BOOKING ─── */
+.booking-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0d2240 100%);
+  padding-block: clamp(var(--space-12), 6vw, var(--space-16));
+  text-align: center;
+}
+.booking-inner { max-width: 600px; margin-inline: auto; padding-inline: var(--space-4); }
+.booking-section h2 { font-size: var(--text-xl); font-weight: 800; color: #fff; letter-spacing: -0.02em; margin-bottom: var(--space-3); }
+.booking-section p { font-size: var(--text-base); color: rgba(255,255,255,0.65); margin-bottom: var(--space-8); margin-inline: auto; }
+.booking-card {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-xl); padding: var(--space-8);
+  display: flex; flex-direction: column; align-items: center; gap: var(--space-5);
+}
+.booking-avatar {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent), #0d5c60);
+  display: grid; place-items: center; border: 3px solid rgba(255,255,255,0.2);
+}
+.booking-name { font-size: var(--text-lg); font-weight: 800; color: #fff; }
+.booking-title { font-size: var(--text-sm); color: rgba(255,255,255,0.55); margin-top: -var(--space-3); }
+.booking-perks { display: flex; gap: var(--space-4); flex-wrap: wrap; justify-content: center; }
+.booking-perk { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-xs); color: rgba(255,255,255,0.65); }
+.booking-perk svg { color: #3DD5DB; flex-shrink: 0; }
+
+/* ─── FAQ ─── */
+.faq-section { padding-block: clamp(var(--space-12), 6vw, var(--space-16)); border-top: 1px solid var(--color-divider); }
+.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-top: var(--space-10); }
+@media (max-width: 768px) { .faq-grid { grid-template-columns: 1fr; } }
+.faq-item { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); }
+.faq-q { font-size: var(--text-sm); font-weight: 700; color: var(--color-text); margin-bottom: var(--space-2); }
+.faq-a { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.7; }
+
+/* ─── FOOTER ─── */
+.site-footer { background: var(--color-primary); padding-block: var(--space-8); text-align: center; }
+.site-footer p { font-size: var(--text-xs); color: rgba(255,255,255,0.4); max-width: none; }
+.site-footer a { color: rgba(255,255,255,0.6); text-decoration: underline; }
+.site-footer a:hover { color: #fff; }
+  </style>
+    <script src="https://cdn.pagesense.io/js/valuedhr/256d9da17dfa4f46bd9cbb37c6ef86e2.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="ValuedHR home">
+        <svg width="30" height="30" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.1)"/>
+          <path d="M9 11h7l5 8 5-8h1" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="18" cy="24" r="3.5" fill="none" stroke="#fff" stroke-width="2.2"/>
+        </svg>
+        <span class="logo-text">ValuedHR</span>
+      </a>
+      <a href="https://app.reclaim.ai/m/mmendez" target="_blank" rel="noopener" class="btn btn-primary">Book a Free Call</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="proposal-hero">
+    <div class="proposal-hero-inner">
+      <div class="hero-badge">
+        <svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+        Your Personalized Rate Card
+      </div>
+      <h1>Your ValuedHR <em>Proposal</em></h1>
+      <p>Here's everything you need to choose the right package, get started, or ask questions. All pricing is included below — no sales calls required to see numbers.</p>
+      <div class="hero-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Pricing is confidential — please don't share this page publicly
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="packages-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Three Packages</span>
+        <h2>Pick the fit for where you are right now</h2>
+        <p>Each package is designed for a different stage. Not sure which one? Book a free call and we'll point you in the right direction.</p>
+      </div>
+
+      <div class="packages-grid">
+
+        <!-- Package 1: HR Essentials Sprint -->
+        <article class="package-card">
+          <div class="pkg-badge">Most Popular First Step</div>
+          <div>
+            <h2 class="pkg-title">HR Essentials Sprint</h2>
+            <p class="pkg-duration">30-Day Fixed-Scope Project</p>
+          </div>
+          <p class="pkg-desc">For small businesses that outgrew DIY HR and need to fix risk, onboarding, and policies — fast. In 30 days we audit your HR, patch compliance gaps, and put simple systems in place.</p>
+          <ul class="pkg-outcomes" role="list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> HR health check + compliance audit</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Core docs: offer letters, handbook, checklists</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> AI-assisted onboarding workflow setup</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Live training session with your team</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Reduced compliance risk, cleaner records</li>
+          </ul>
+          <hr class="pkg-divider" />
+          <div class="pkg-price">
+            <span class="price-from">Starting at</span>
+            <span class="price-num">$2,500</span>
+            <span class="price-note">flat project fee · no monthly commitment</span>
+          </div>
+          <div class="pkg-cta">
+            <!-- Replace href with your Stripe payment link -->
+            <a href="https://buy.stripe.com/REPLACE_WITH_HR_ESSENTIALS_LINK" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Get Started — $2,500
+            </a>
+            <p style="font-size:var(--text-xs);color:var(--color-text-muted);text-align:center;margin-top:var(--space-2);">Secure checkout via Stripe</p>
+          </div>
+        </article>
+
+        <!-- Package 2: AI-First Support Desk (Featured) -->
+        <article class="package-card package-card--featured">
+          <div class="pkg-badge">AI + Human Innovation</div>
+          <div>
+            <h2 class="pkg-title">AI-First Support Desk</h2>
+            <p class="pkg-duration">Monthly Retainer — Ongoing</p>
+          </div>
+          <p class="pkg-desc">For customer-facing businesses that want 24/7 support coverage and lower costs — without sacrificing quality. AI handles 60–80% of tickets. Our human team handles every escalation.</p>
+          <ul class="pkg-outcomes" role="list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> AI handles FAQs, orders, appointment changes</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Human agents for complex &amp; high-stakes issues</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Response times in seconds, not hours</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Monthly ROI report: deflection, CSAT, cost/ticket</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 24/7 coverage across channels</li>
+          </ul>
+          <hr class="pkg-divider" />
+          <div class="pkg-price">
+            <span class="price-from">Starting at</span>
+            <span class="price-num">$1,200<small>/mo</small></span>
+            <span class="price-note">based on ticket volume · cancel anytime</span>
+          </div>
+          <div class="pkg-cta">
+            <!-- Replace href with your Stripe payment link -->
+            <a href="https://buy.stripe.com/REPLACE_WITH_SUPPORT_DESK_LINK" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Start at $1,200/mo
+            </a>
+            <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);text-align:center;margin-top:var(--space-2);">Secure checkout via Stripe</p>
+          </div>
+        </article>
+
+        <!-- Package 3: Fractional People & Ops Partner -->
+        <article class="package-card">
+          <div class="pkg-badge">Strategic Retainer</div>
+          <div>
+            <h2 class="pkg-title">Fractional People &amp; Ops Partner</h2>
+            <p class="pkg-duration">Monthly Retainer — Ongoing</p>
+          </div>
+          <p class="pkg-desc">For founders with 20–150 employees who need ongoing HR, people ops, and light ops leadership — without hiring a full-time director. One dedicated partner who owns your people processes.</p>
+          <ul class="pkg-outcomes" role="list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Ongoing HR advisory: hiring, performance, policies</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Monthly HR admin: onboarding, offboarding, records</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> AI automations for internal FAQs and approvals</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Light people analytics: headcount, turnover, pipeline</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> One dedicated point of contact</li>
+          </ul>
+          <hr class="pkg-divider" />
+          <div class="pkg-price">
+            <span class="price-from">Starting at</span>
+            <span class="price-num">$1,500<small>/mo</small></span>
+            <span class="price-note">tiered by team size · cancel anytime</span>
+          </div>
+          <div class="pkg-cta">
+            <!-- Replace href with your Stripe payment link -->
+            <a href="https://buy.stripe.com/REPLACE_WITH_FRACTIONAL_LINK" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Start at $1,500/mo
+            </a>
+            <p style="font-size:var(--text-xs);color:var(--color-text-muted);text-align:center;margin-top:var(--space-2);">Secure checkout via Stripe</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking-section">
+    <div class="booking-inner">
+      <h2>Not sure which package fits?</h2>
+      <p>Book a free 30-minute strategy call. No pitch, no pressure — just a straight conversation about what you need and whether ValuedHR is the right fit.</p>
+      <div class="booking-card">
+        <div class="booking-avatar">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div>
+          <p class="booking-name">Michelle Mendez</p>
+          <p class="booking-title" style="font-size:var(--text-sm);color:rgba(255,255,255,0.55);">Founder, ValuedHR Business Services</p>
+        </div>
+        <div class="booking-perks">
+          <span class="booking-perk">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Free 30-minute call
+          </span>
+          <span class="booking-perk">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            No obligation
+          </span>
+          <span class="booking-perk">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Book instantly
+          </span>
+        </div>
+        <a href="https://app.reclaim.ai/m/mmendez" target="_blank" rel="noopener" class="btn btn-primary btn-lg" style="background:#fff;color:var(--color-primary);border-color:#fff;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book My Free Strategy Call
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Questions</span>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <p class="faq-q">Can I pay in installments?</p>
+          <p class="faq-a">For the HR Essentials Sprint, we offer 50% upfront and 50% at completion. Monthly retainers are billed monthly with no long-term contract.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">How quickly can we get started?</p>
+          <p class="faq-a">Typically within 1–2 weeks of signing. We'll kick off with a discovery call to align on scope and priorities.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Is there a contract or minimum commitment?</p>
+          <p class="faq-a">The HR Essentials Sprint is a fixed 30-day project. Monthly retainers run month-to-month — cancel with 30 days' notice.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">What if I need something not listed here?</p>
+          <p class="faq-a">Book a call and let's talk. Many clients start with one package and add services as their needs evolve. Custom scopes are available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 ValuedHR Business Services · Wake Forest, NC · <a href="mailto:michelle.mendez@valuedhr.com">michelle.mendez@valuedhr.com</a></p>
+      <p style="margin-top:var(--space-2);">This proposal is confidential and intended for the recipient only.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

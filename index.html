@@ -1117,6 +1117,7 @@ a { color: inherit; text-decoration: none; }
 }
 
   </style>
+    <script src="https://cdn.pagesense.io/js/valuedhr/256d9da17dfa4f46bd9cbb37c6ef86e2.js"></script>
 </head>
 <body>
 
@@ -1745,61 +1746,68 @@ a { color: inherit; text-decoration: none; }
   <div class="pgate-overlay" id="pgate-overlay" aria-hidden="true">
     <div class="pgate-modal" role="dialog" aria-modal="true" aria-labelledby="pgate-title">
       <button type="button" class="pgate-close" id="pgate-close" aria-label="Close">&times;</button>
-      <h3 id="pgate-title">See full pricing</h3>
-      <p class="pgate-sub">Enter your name and email and we'll unlock pricing for every package on this page.</p>
-      <form id="pgate-form" novalidate>
-        <label for="pgate-name">Full name</label>
-        <input type="text" id="pgate-name" autocomplete="name" placeholder="Jane Smith" required />
-        <label for="pgate-email">Email</label>
-        <input type="email" id="pgate-email" autocomplete="email" placeholder="jane@company.com" required />
-        <p class="pgate-error" id="pgate-error">Please enter your name and a valid email address.</p>
-        <button type="submit" id="pgate-submit">Unlock Pricing</button>
-        <p class="pgate-privacy">We don't spam. Your information stays private.</p>
-      </form>
+
+      <!-- Step 1: Form -->
+      <div id="pgate-step-form">
+        <h3 id="pgate-title">Get your personalized rate card</h3>
+        <p class="pgate-sub">Enter your details and we'll email you a full proposal — with pricing, package options, and a link to get started or book a call.</p>
+        <form id="pgate-form" novalidate>
+          <label for="pgate-name">Full name</label>
+          <input type="text" id="pgate-name" autocomplete="name" placeholder="Jane Smith" required />
+          <label for="pgate-email">Work email</label>
+          <input type="email" id="pgate-email" autocomplete="email" placeholder="jane@company.com" required />
+          <p class="pgate-error" id="pgate-error">Please enter your name and a valid email address.</p>
+          <button type="submit" id="pgate-submit">Send My Rate Card →</button>
+          <p class="pgate-privacy">No spam — just your proposal. Unsubscribe anytime.</p>
+        </form>
+      </div>
+
+      <!-- Step 2: Confirmation (hidden until submitted) -->
+      <div id="pgate-step-confirm" style="display:none; text-align:center; padding: var(--space-4) 0;">
+        <div style="font-size:2.5rem; margin-bottom: var(--space-4);">📬</div>
+        <h3 style="margin-bottom: var(--space-2);">Check your inbox!</h3>
+        <p class="pgate-sub" id="pgate-confirm-msg">We've sent your ValuedHR rate card to <strong id="pgate-confirm-email"></strong>. Click the link in the email to view full pricing, Stripe payment options, and book a call.</p>
+        <button type="button" class="pgate-close" style="position:static; font-size:var(--text-sm); color:var(--color-accent); font-weight:600; margin-top:var(--space-4); display:inline-block;">Close</button>
+      </div>
     </div>
   </div>
 
   <script>
   (function(){
-    var PGATE_KEY = 'vhr_pricing_unlocked';
     var overlay = document.getElementById('pgate-overlay');
     var form = document.getElementById('pgate-form');
     var nameInput = document.getElementById('pgate-name');
     var emailInput = document.getElementById('pgate-email');
     var errorEl = document.getElementById('pgate-error');
     var submitBtn = document.getElementById('pgate-submit');
-    var closeBtn = document.getElementById('pgate-close');
+    var stepForm = document.getElementById('pgate-step-form');
+    var stepConfirm = document.getElementById('pgate-step-confirm');
+    var confirmEmail = document.getElementById('pgate-confirm-email');
 
-    function isUnlocked(){
-      try { return localStorage.getItem(PGATE_KEY) === '1'; } catch(e){ return false; }
-    }
-    function setUnlocked(){
-      try { localStorage.setItem(PGATE_KEY, '1'); } catch(e){}
-      document.querySelectorAll('.pkg-price-wrap').forEach(function(wrap){
-        wrap.classList.remove('is-locked');
-      });
-    }
-    function lockAll(){
-      document.querySelectorAll('.pkg-price-wrap').forEach(function(wrap){
-        wrap.classList.add('is-locked');
-      });
-    }
+    // Always keep pricing locked — only unlocked via proposal page
+    document.querySelectorAll('.pkg-price-wrap').forEach(function(wrap){
+      wrap.classList.add('is-locked');
+    });
+
     function openModal(){
       overlay.classList.add('is-open');
       overlay.setAttribute('aria-hidden', 'false');
+      stepForm.style.display = '';
+      stepConfirm.style.display = 'none';
       nameInput.focus();
     }
     function closeModal(){
       overlay.classList.remove('is-open');
       overlay.setAttribute('aria-hidden', 'true');
+      form.reset();
     }
-
-    if (isUnlocked()) { setUnlocked(); } else { lockAll(); }
 
     document.querySelectorAll('.js-pgate-open').forEach(function(btn){
       btn.addEventListener('click', openModal);
     });
-    closeBtn.addEventListener('click', closeModal);
+    document.querySelectorAll('.pgate-close').forEach(function(btn){
+      btn.addEventListener('click', closeModal);
+    });
     overlay.addEventListener('click', function(e){
       if (e.target === overlay) closeModal();
     });
@@ -1822,7 +1830,7 @@ a { color: inherit; text-decoration: none; }
       }
       errorEl.classList.remove('is-visible');
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Unlocking…';
+      submitBtn.textContent = 'Sending…';
 
       var parts = fullName.split(/\s+/);
       var lastName = parts.length > 1 ? parts.pop() : parts[0];
@@ -1840,20 +1848,22 @@ a { color: inherit; text-decoration: none; }
       formData.append('First Name', firstName);
       formData.append('Last Name', lastName);
       formData.append('Email', email);
+      formData.append('Lead Source', 'Pricing Gate');
 
       try {
         if (window.$zoho && window.$zoho.salesiq && window.$zoho.salesiq.visitor) {
           window.$zoho.salesiq.visitor.name(fullName);
           window.$zoho.salesiq.visitor.email(email);
         }
-      } catch(e){}
+      } catch(err){}
 
       function finish(){
-        setUnlocked();
-        closeModal();
+        // Show confirmation step
+        confirmEmail.textContent = email;
+        stepForm.style.display = 'none';
+        stepConfirm.style.display = '';
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Unlock Pricing';
-        form.reset();
+        submitBtn.textContent = 'Send My Rate Card →';
       }
 
       fetch('https://crm.zoho.com/crm/WebToLeadForm', {
