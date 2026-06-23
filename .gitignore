@@ -1,0 +1,10 @@
+# Non-website files
+*.zip
+*.url
+ValuedHR Social Media Post Metricool template
+
+# Git automation config (contains token — keep private)
+.github-token
+
+# macOS
+.DS_Store
