@@ -24,8 +24,8 @@ if git diff --quiet && git diff --cached --quiet; then
 fi
 
 # Stage, commit, and push
-git add index.html blog.html valuedhr-website.html
-git commit -m "Weekly blog update — $(date '+%B %d, %Y')"
+git add index.html blog.html valuedhr-website.html proposal.html
+git commit -m "Site update — $(date '+%B %d, %Y')"
 git push https://$GITHUB_USER:$TOKEN@github.com/$GITHUB_USER/$GITHUB_REPO.git main
 
 echo "✓ Deployed to GitHub successfully."
