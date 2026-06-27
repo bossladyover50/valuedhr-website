@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ValuedHR — AI + Human HR & Operations for Growing Businesses</title>
-  <meta name="description" content="ValuedHR builds and manages the HR, support, and operations systems your business needs to scale — combining AI automation with expert human oversight." />
-  <meta property="og:title" content="ValuedHR — AI + Human HR & Operations" />
-  <meta property="og:description" content="Three ways ValuedHR helps growing businesses scale: HR Essentials Sprint, AI-First Support Desk, and Fractional People & Ops Partner." />
-  <meta name="keywords" content="fractional HR small business, HR consulting, outsourced HR, people operations, HR compliance, employee handbook, HR services Texas, ValuedHR"/>
+  <title>ValuedHR — People-First HR for Growing Businesses</title>
+  <meta name="description" content="ValuedHR is the human-centered HR partner for growing businesses — focused on employee relations, recruiting, leadership coaching, worker wellbeing, and the people who make work worth showing up for." />
+  <meta property="og:title" content="ValuedHR — People-First HR & Coaching" />
+  <meta property="og:description" content="Employee relations, recruiting, executive coaching, worker mental health, the Encore Package for professionals over 50, and the ValuedHR Academy. HR that puts people first." />
+  <meta name="keywords" content="people-first HR, employee relations consulting, HR coaching, executive coaching, worker mental health, coaching for professionals over 50, recruiting consulting, employee engagement, ValuedHR"/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://valuedhr.com/"/>
   <meta property="og:url" content="https://valuedhr.com/"/>
   <meta property="og:type" content="website" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"ValuedHR Business Services","url":"https://valuedhr.com","description":"ValuedHR builds and manages the HR, support, and operations systems your business needs to scale — combining AI automation with expert human oversight.","founder":{"@type":"Person","name":"Michelle Mendez"},"serviceType":["Fractional HR","People Operations","HR Compliance","Employee Handbook","Outsourced HR"],"areaServed":"US","sameAs":["https://valuedhr.com/blog.html"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"ValuedHR Business Services","url":"https://valuedhr.com","description":"ValuedHR is the human-centered HR partner for growing businesses — focused on employee relations, recruiting, leadership coaching, worker wellbeing, and the people who make work worth showing up for.","founder":{"@type":"Person","name":"Michelle Mendez"},"serviceType":["Employee Relations","Recruiting","Executive Coaching","HR Coaching","Worker Mental Health","Employee Engagement","Coaching for Professionals Over 50"],"areaServed":"US","sameAs":["https://valuedhr.com/blog.html"]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
@@ -1121,6 +1121,12 @@ a { color: inherit; text-decoration: none; }
   margin: var(--space-3) 0 0;
 }
 
+/* ═══ RESPONSIVE: inline grid sections ═══ */
+@media (max-width: 768px) {
+  #coaching .container > div,
+  #sub-brands .container > .section-header ~ div { grid-template-columns: 1fr !important; }
+  #sub-brands .container > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+}
   </style>
     <script src="https://cdn.pagesense.io/js/valuedhr/256d9da17dfa4f46bd9cbb37c6ef86e2.js"></script>
 </head>
@@ -1141,8 +1147,9 @@ a { color: inherit; text-decoration: none; }
       </a>
       <ul class="nav-links" role="list">
         <li><a href="#services">Services</a></li>
-        <li><a href="#why">Why ValuedHR</a></li>
-        <li><a href="#process">How It Works</a></li>
+        <li><a href="#coaching">Coaching</a></li>
+        <li><a href="#academy">Academy</a></li>
+        <li><a href="#sub-brands">Our Brands</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -1150,7 +1157,7 @@ a { color: inherit; text-decoration: none; }
         <button data-theme-toggle aria-label="Switch to dark mode" class="theme-toggle">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <a href="#contact" class="btn btn-primary">Book a Call</a>
+        <a href="#contact" class="btn btn-primary">Book a Discovery Call</a>
       </div>
       <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
@@ -1159,11 +1166,12 @@ a { color: inherit; text-decoration: none; }
     <div class="mobile-menu" id="mobile-menu" hidden>
       <ul role="list">
         <li><a href="#services">Services</a></li>
-        <li><a href="#why">Why ValuedHR</a></li>
-        <li><a href="#process">How It Works</a></li>
+        <li><a href="#coaching">Coaching</a></li>
+        <li><a href="#academy">Academy</a></li>
+        <li><a href="#sub-brands">Our Brands</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#contact" class="btn btn-primary">Book a Call</a></li>
+        <li><a href="#contact" class="btn btn-primary">Book a Discovery Call</a></li>
       </ul>
     </div>
   </header>
@@ -1177,33 +1185,33 @@ a { color: inherit; text-decoration: none; }
       <div class="container hero-inner">
         <div class="hero-badge">
           <span class="badge-dot"></span>
-          AI + Human Operations
+          People-First HR &amp; Coaching
         </div>
         <h1 class="hero-headline">
-          HR and Support Systems<br>
-          <em>Built to Scale With You</em>
+          HR That Actually Puts<br>
+          <em>People First</em>
         </h1>
         <p class="hero-sub">
-          ValuedHR builds and manages the people and support systems your business needs — combining AI automation with expert human oversight, so you get speed, quality, and real results.
+          ValuedHR is the human-centered HR partner for growing businesses — focused on employee relations, recruiting, leadership coaching, and the people who make work worth showing up for.
         </p>
         <div class="hero-cta-group">
-          <a href="#contact" class="btn btn-primary btn-lg">Get Your Free Strategy Call</a>
-          <a href="#services" class="btn btn-ghost btn-lg">See Our Packages →</a>
+          <a href="#contact" class="btn btn-primary btn-lg">Book a Free Discovery Call</a>
+          <a href="#services" class="btn btn-ghost btn-lg">See Our Services →</a>
         </div>
         <div class="hero-stats">
           <div class="stat">
-            <span class="stat-num">500+</span>
-            <span class="stat-label">Businesses served</span>
+            <span class="stat-num">70%</span>
+            <span class="stat-label">of workers are disengaged — we fix that</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <span class="stat-num">98%</span>
-            <span class="stat-label">Satisfaction rate</span>
+            <span class="stat-num">4×</span>
+            <span class="stat-label">revenue growth with strong people culture</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <span class="stat-num">24/7</span>
-            <span class="stat-label">AI + human coverage</span>
+            <span class="stat-num">100%</span>
+            <span class="stat-label">human-centered approach</span>
           </div>
         </div>
       </div>
@@ -1212,25 +1220,29 @@ a { color: inherit; text-decoration: none; }
     <!-- ═══════════════════════════════════════════════
          TRUST BAR
     ═══════════════════════════════════════════════ -->
-    <section class="trust-bar" aria-label="What we solve">
+    <section class="trust-bar" aria-label="What we believe">
       <div class="container">
-        <p class="trust-label">We replace the chaos of doing it yourself</p>
+        <p class="trust-label">What we believe</p>
         <div class="trust-items">
           <div class="trust-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            No more HR fires every Monday
+            Happy teams don't quit
           </div>
           <div class="trust-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Support tickets answered in seconds, not hours
+            Great managers are made, not born
           </div>
           <div class="trust-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Scale operations without a full internal team
+            Every worker deserves to feel valued
           </div>
           <div class="trust-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Expert humans for every edge case AI can't handle
+            Experience is an asset — not a liability
+          </div>
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Recruiting is relationship-building
           </div>
         </div>
       </div>
@@ -1239,108 +1251,326 @@ a { color: inherit; text-decoration: none; }
     <!-- ═══════════════════════════════════════════════
          SERVICES
     ═══════════════════════════════════════════════ -->
+    <!-- ═══ PILLAR 1 & 2: PEOPLE OPERATIONS + WELLBEING ═══ -->
     <section class="services" id="services" aria-labelledby="services-heading">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Three Ways We Help</span>
-          <h2 id="services-heading">Pick the package that fits where you are right now</h2>
-          <p>Whether you need a quick HR cleanup, ongoing support coverage, or a strategic people partner — we have a focused offer for each stage.</p>
+          <span class="section-label">People &amp; Team Services</span>
+          <h2 id="services-heading">The HR work that actually makes a difference</h2>
+          <p>Employee relations, recruiting, team health, and workforce wellbeing — the four cornerstones of a thriving workplace.</p>
         </div>
 
         <div class="packages-grid">
 
-          <!-- Package 1 -->
+          <!-- Package 1: Employee Relations -->
           <article class="package-card" aria-labelledby="pkg1-title">
-            <div class="pkg-tag">Most Popular First Step</div>
+            <div class="pkg-tag">Pillar 1 · People Operations</div>
             <div class="pkg-icon pkg-icon--1">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
-            <h3 id="pkg1-title" class="pkg-title">HR Essentials Sprint</h3>
-            <p class="pkg-duration">30-Day Fixed-Scope Project</p>
-            <p class="pkg-desc">Small businesses that outgrew DIY HR and want to fix risk, onboarding, and policies — fast. In 30 days, we audit your HR, patch compliance gaps, and put simple systems in place so you can hire, onboard, and offboard without chaos.</p>
+            <h3 id="pkg1-title" class="pkg-title">Employee Relations</h3>
+            <p class="pkg-duration">Retainer or Project-Based</p>
+            <p class="pkg-desc">Conflicts, performance issues, difficult conversations — handled with care and expertise. We help managers and business owners navigate the people situations that keep them up at night, before they escalate.</p>
             <ul class="pkg-outcomes" role="list">
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> HR health check + compliance audit</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Core docs: offer letters, handbook, checklists</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> AI-assisted onboarding workflow setup</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Live training session with your team</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Reduced compliance risk, cleaner records</li>
-            </ul>
-            <div class="pkg-price-wrap is-locked">
-              <div class="pkg-price">
-                <span class="price-from">Starting at</span>
-                <span class="price-num">$2,500</span>
-                <span class="price-note">flat project fee</span>
-              </div>
-              <div class="pkg-price-unlock">
-                <button type="button" class="pkg-unlock-btn js-pgate-open">🔒 Unlock pricing</button>
-              </div>
-            </div>
-            <a href="#contact" class="btn btn-outline">Book an HR Essentials Call</a>
-          </article>
-
-          <!-- Package 2 — Featured -->
-          <article class="package-card package-card--featured" aria-labelledby="pkg2-title">
-            <div class="pkg-tag pkg-tag--white">AI + Human Innovation</div>
-            <div class="pkg-icon pkg-icon--2">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <h3 id="pkg2-title" class="pkg-title">AI-First Support Desk</h3>
-            <p class="pkg-duration">Monthly Retainer — Ongoing</p>
-            <p class="pkg-desc">Customer-facing businesses that want 24/7 support coverage and lower costs — without sacrificing quality. We deploy AI to handle 60–80% of tickets automatically. Our human team handles every escalation that needs real judgment.</p>
-            <ul class="pkg-outcomes" role="list">
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> AI assistant handles FAQs, orders, appointment changes</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Human agents for complex & high-stakes issues</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Response times measured in seconds, not hours</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Monthly ROI report: deflection, CSAT, cost/ticket</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 24/7 coverage across channels</li>
-            </ul>
-            <div class="pkg-stat-row">
-              <div class="pkg-stat"><span>60–80%</span><small>of tickets resolved by AI</small></div>
-              <div class="pkg-stat"><span>$3.50</span><small>avg ROI per $1 invested</small></div>
-            </div>
-            <div class="pkg-price-wrap is-locked">
-              <div class="pkg-price">
-                <span class="price-from">Starting at</span>
-                <span class="price-num">$1,200<small>/mo</small></span>
-                <span class="price-note">based on ticket volume</span>
-              </div>
-              <div class="pkg-price-unlock">
-                <button type="button" class="pkg-unlock-btn js-pgate-open">🔒 Unlock pricing</button>
-              </div>
-            </div>
-            <a href="#contact" class="btn btn-white">Talk About Your Support Volume</a>
-          </article>
-
-          <!-- Package 3 -->
-          <article class="package-card" aria-labelledby="pkg3-title">
-            <div class="pkg-tag">Strategic Retainer</div>
-            <div class="pkg-icon pkg-icon--3">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-            </div>
-            <h3 id="pkg3-title" class="pkg-title">Fractional People & Ops Partner</h3>
-            <p class="pkg-duration">Monthly Retainer — Ongoing</p>
-            <p class="pkg-desc">Founders with 20–150 employees who need ongoing HR, people operations, and light ops leadership — but aren't ready for a full-time director. Get a dedicated partner who owns your HR basics, people processes, and key workflows.</p>
-            <ul class="pkg-outcomes" role="list">
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Ongoing HR advisory: hiring, performance, policies</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Monthly HR admin: onboarding, offboarding, records</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> AI automations for internal FAQs and approvals</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Light people analytics: headcount, turnover, pipeline</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> One dedicated point of contact</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Conflict resolution &amp; mediation support</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Performance improvement plan guidance</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Manager coaching for tough conversations</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Onboarding &amp; offboarding processes</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Employee handbook &amp; core policy docs</li>
             </ul>
             <div class="pkg-price-wrap is-locked">
               <div class="pkg-price">
                 <span class="price-from">Starting at</span>
                 <span class="price-num">$1,500<small>/mo</small></span>
+                <span class="price-note">retainer or project rate</span>
+              </div>
+              <div class="pkg-price-unlock">
+                <button type="button" class="pkg-unlock-btn js-pgate-open">🔒 Unlock pricing</button>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get Employee Relations Help</a>
+          </article>
+
+          <!-- Package 2: Recruiting — Featured -->
+          <article class="package-card package-card--featured" aria-labelledby="pkg2-title">
+            <div class="pkg-tag pkg-tag--white">Pillar 1 · People Operations</div>
+            <div class="pkg-icon pkg-icon--2">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 id="pkg2-title" class="pkg-title">Recruiting Done Right</h3>
+            <p class="pkg-duration">Per-Hire or Retainer</p>
+            <p class="pkg-desc">Finding great people is a relationship, not a transaction. We manage your full recruiting cycle — from job posting through offer letter — with a human-first approach that attracts candidates who actually fit your culture.</p>
+            <ul class="pkg-outcomes" role="list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Job posting &amp; candidate sourcing</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Interview process design &amp; coaching</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Candidate screening &amp; assessment</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Offer letter &amp; negotiation support</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 30/60/90 day onboarding plan</li>
+            </ul>
+            <div class="pkg-stat-row">
+              <div class="pkg-stat"><span>3×</span><small>faster than avg. hiring timeline</small></div>
+              <div class="pkg-stat"><span>90%</span><small>90-day retention rate</small></div>
+            </div>
+            <div class="pkg-price-wrap is-locked">
+              <div class="pkg-price">
+                <span class="price-from">Starting at</span>
+                <span class="price-num">$2,500<small>/hire</small></span>
+                <span class="price-note">or monthly recruiting retainer</span>
+              </div>
+              <div class="pkg-price-unlock">
+                <button type="button" class="pkg-unlock-btn js-pgate-open">🔒 Unlock pricing</button>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-white">Talk About Your Next Hire</a>
+          </article>
+
+          <!-- Package 3: Wellbeing + Gamification -->
+          <article class="package-card" aria-labelledby="pkg3-title">
+            <div class="pkg-tag">Pillar 3 · Wellbeing &amp; Engagement</div>
+            <div class="pkg-icon pkg-icon--3">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 id="pkg3-title" class="pkg-title">Wellbeing &amp; RewardIQ</h3>
+            <p class="pkg-duration">Monthly Retainer — Ongoing</p>
+            <p class="pkg-desc">Burnout is real, and disengagement is expensive. We design workplace wellbeing programs and gamified reward systems that make people actually want to show up — and give their best when they do.</p>
+            <ul class="pkg-outcomes" role="list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Workforce wellbeing &amp; mental health programs</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Employee recognition &amp; rewards system design</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Gamification strategy for team performance</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Manager training: psychological safety</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Culture &amp; engagement strategy</li>
+            </ul>
+            <div class="pkg-price-wrap is-locked">
+              <div class="pkg-price">
+                <span class="price-from">Starting at</span>
+                <span class="price-num">$1,200<small>/mo</small></span>
                 <span class="price-note">tiered by team size</span>
               </div>
               <div class="pkg-price-unlock">
                 <button type="button" class="pkg-unlock-btn js-pgate-open">🔒 Unlock pricing</button>
               </div>
             </div>
-            <a href="#contact" class="btn btn-outline">Discuss Fractional Support</a>
+            <a href="#contact" class="btn btn-outline">Build a Healthier Team Culture</a>
           </article>
 
         </div><!-- /.packages-grid -->
+      </div>
+    </section>
+
+    <!-- ═══ ENCORE PACKAGE HERO FEATURE ═══ -->
+    <section style="padding-block: clamp(3rem, 8vw, 5rem); background: var(--color-primary);" id="coaching" aria-labelledby="encore-heading">
+      <div class="container">
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items:center;">
+          <div style="display:flex; flex-direction:column; gap:var(--space-5); color:#fff;">
+            <span style="font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-accent);">Our Hero Offer · Pillar 2: Coaching</span>
+            <h2 id="encore-heading" style="font-size:var(--text-2xl);font-weight:800;letter-spacing:-0.025em;line-height:1.15;color:#fff;">The Encore Package <span style="font-family:var(--font-display);font-style:italic;font-weight:400;">for Professionals Over 50</span></h2>
+            <p style="color:rgba(255,255,255,0.75);font-size:var(--text-base);line-height:1.7;">You have 30 years of experience, hard-earned wisdom, and more to give — and the workplace keeps telling you you're "overqualified." That ends here. The Encore Package is a custom coaching program designed for experienced professionals who are ready to reposition, rebuild confidence, and lead their next chapter on their own terms.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--space-3);">
+              <li style="display:flex;align-items:flex-start;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.85);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
+                Career repositioning &amp; personal brand strategy
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.85);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
+                Confidence &amp; identity rebuilding after career disruption
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.85);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
+                Navigating ageism &amp; advocating for your worth
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.85);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
+                Leadership legacy work — defining what you want to build next
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.85);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
+                3-month custom coaching engagement, 1:1 with Michelle
+              </li>
+            </ul>
+            <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;padding-top:var(--space-2);">
+              <a href="#contact" class="btn btn-primary btn-lg">Start Your Encore →</a>
+              <a href="#contact" class="btn btn-outline" style="border-color:rgba(255,255,255,0.35);color:#fff;">Learn More</a>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+            <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius-xl);padding:var(--space-6);">
+              <p style="font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:rgba(255,255,255,0.4);margin-bottom:var(--space-4);">Also available: Executive Coaching</p>
+              <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+                <div style="display:flex;gap:var(--space-4);align-items:flex-start;">
+                  <div style="width:42px;height:42px;border-radius:var(--radius-md);background:rgba(255,255,255,0.1);display:grid;place-items:center;flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+                  </div>
+                  <div>
+                    <p style="font-weight:700;color:#fff;font-size:var(--text-sm);">CEO &amp; Founder Clarity Package</p>
+                    <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.6);margin-top:2px;">Leadership, decision-making &amp; burnout prevention for entrepreneurs. 3-month engagement.</p>
+                  </div>
+                </div>
+                <div style="display:flex;gap:var(--space-4);align-items:flex-start;">
+                  <div style="width:42px;height:42px;border-radius:var(--radius-md);background:rgba(255,255,255,0.1);display:grid;place-items:center;flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <div>
+                    <p style="font-weight:700;color:#fff;font-size:var(--text-sm);">Executive Edge</p>
+                    <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.6);margin-top:2px;">For C-suite &amp; senior managers focused on people management, conflict, and team performance.</p>
+                  </div>
+                </div>
+                <div style="display:flex;gap:var(--space-4);align-items:flex-start;">
+                  <div style="width:42px;height:42px;border-radius:var(--radius-md);background:rgba(255,255,255,0.1);display:grid;place-items:center;flex-shrink:0;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  </div>
+                  <div>
+                    <p style="font-weight:700;color:#fff;font-size:var(--text-sm);">Team Health Audit</p>
+                    <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.6);margin-top:2px;">One-time deep-dive on team culture, communication gaps &amp; retention risks. Flat fee project.</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#contact" class="btn btn-outline btn-full" style="margin-top:var(--space-5);border-color:rgba(255,255,255,0.3);color:#fff;">Explore All Coaching Options</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PILLAR 4: ACADEMY ═══ -->
+    <section style="padding-block: clamp(3rem, 8vw, 5rem); background: var(--color-surface-2);" id="academy" aria-labelledby="academy-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Pillar 4 · Learning &amp; Development</span>
+          <h2 id="academy-heading">ValuedHR Academy</h2>
+          <p>Courses, ebooks, and live workshops that give leaders, managers, and workers the tools they actually need — without the corporate fluff.</p>
+        </div>
+        <div class="packages-grid">
+          <article class="package-card" aria-labelledby="acad1-title">
+            <div class="pkg-tag">Self-Paced</div>
+            <div class="pkg-icon pkg-icon--1">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3 id="acad1-title" class="pkg-title">Online Courses</h3>
+            <p class="pkg-duration">Self-Paced · Always Available</p>
+            <p class="pkg-desc">Leadership fundamentals, communication, conflict resolution, resilience, and people management — built for busy professionals who need real skills, not theory.</p>
+            <ul class="pkg-outcomes" role="list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Managing people &amp; difficult conversations</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Building resilience &amp; preventing burnout</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Recruiting &amp; interviewing essentials</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Leadership fundamentals for new managers</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Join the Waitlist</a>
+          </article>
+
+          <article class="package-card package-card--featured" aria-labelledby="acad2-title">
+            <div class="pkg-tag pkg-tag--white">Free &amp; Paid Guides</div>
+            <div class="pkg-icon pkg-icon--2">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <h3 id="acad2-title" class="pkg-title">Ebooks &amp; Playbooks</h3>
+            <p class="pkg-duration">Instant Download · Free &amp; Premium</p>
+            <p class="pkg-desc">Practical guides built for solopreneurs, small business owners, and working professionals. From the Over-50 Career Playbook to the Manager's Guide to Hard Conversations — tools you'll actually use.</p>
+            <ul class="pkg-outcomes" role="list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> The Encore Playbook: Your Career After 50</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Manager's Guide to Hard Conversations</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> HR Templates: Offer Letters, Handbooks &amp; More</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> The Anti-Burnout Guide for Leaders</li>
+            </ul>
+            <a href="#contact" class="btn btn-white">Get Free Resources</a>
+          </article>
+
+          <article class="package-card" aria-labelledby="acad3-title">
+            <div class="pkg-tag">Live &amp; Virtual</div>
+            <div class="pkg-icon pkg-icon--3">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 id="acad3-title" class="pkg-title">Live Workshops</h3>
+            <p class="pkg-duration">Monthly Group Sessions</p>
+            <p class="pkg-desc">Open enrollment and private team workshops on leadership, employee relations, mental wellness at work, and more. Interactive, practical, and worth showing up for.</p>
+            <ul class="pkg-outcomes" role="list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Monthly open enrollment virtual sessions</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Private team training (custom topics)</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Certificate of completion included</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Q&amp;A with Michelle after each session</li>
+            </ul>
+            <div class="pkg-price-wrap is-locked">
+              <div class="pkg-price">
+                <span class="price-from">Starting at</span>
+                <span class="price-num">$97<small>/seat</small></span>
+                <span class="price-note">group &amp; corporate rates available</span>
+              </div>
+              <div class="pkg-price-unlock">
+                <button type="button" class="pkg-unlock-btn js-pgate-open">🔒 Unlock pricing</button>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Reserve Your Seat</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SUB-BRANDS ═══ -->
+    <section style="padding-block: clamp(3rem, 8vw, 5rem); background: var(--color-bg);" id="sub-brands" aria-labelledby="subbrands-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">ValuedHR Family of Brands</span>
+          <h2 id="subbrands-heading">Two more ways we help you get things done</h2>
+          <p>Coming soon — two sub-brands built to extend ValuedHR's mission beyond traditional HR.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);">
+
+          <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-8);display:flex;flex-direction:column;gap:var(--space-5);">
+            <div style="display:flex;align-items:center;gap:var(--space-3);">
+              <div style="width:52px;height:52px;border-radius:var(--radius-lg);background:var(--color-accent-light);display:grid;place-items:center;flex-shrink:0;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+              </div>
+              <div>
+                <div style="font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--color-accent);margin-bottom:2px;">Coming Soon</div>
+                <h3 style="font-size:var(--text-lg);font-weight:800;letter-spacing:-0.02em;">Freelance Taskers</h3>
+              </div>
+            </div>
+            <p style="color:var(--color-text-muted);font-size:var(--text-base);line-height:1.65;"><em>Skilled. Trained. Ready to work.</em> A curated marketplace of ValuedHR-vetted freelancers for business support tasks — admin, research, HR support, content, scheduling, and more. Every tasker goes through our onboarding and skill certification before they're listed.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--space-2);">
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:var(--color-text-muted);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Vetted Taskers · Certified Taskers · Specialists
+              </li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:var(--color-text-muted);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Upskill through ValuedHR Academy while you earn
+              </li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:var(--color-text-muted);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                ValuedHR business clients post tasks directly
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Join the Freelancer Waitlist</a>
+          </div>
+
+          <div style="background:var(--color-primary);border:1px solid var(--color-primary);border-radius:var(--radius-xl);padding:var(--space-8);display:flex;flex-direction:column;gap:var(--space-5);color:#fff;">
+            <div style="display:flex;align-items:center;gap:var(--space-3);">
+              <div style="width:52px;height:52px;border-radius:var(--radius-lg);background:rgba(255,255,255,0.12);display:grid;place-items:center;flex-shrink:0;">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--color-accent);margin-bottom:2px;">Coming Soon</div>
+                <h3 style="font-size:var(--text-lg);font-weight:800;letter-spacing:-0.02em;color:#fff;">Outsource Your To-Do List</h3>
+              </div>
+            </div>
+            <p style="color:rgba(255,255,255,0.75);font-size:var(--text-base);line-height:1.65;"><em>Your time back. Human or AI.</em> Virtual assistant services for time-starved entrepreneurs, executives, and over-50 professionals. You choose: a skilled human VA sourced from Freelance Taskers, or an AI-powered assistant — or both.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--space-2);">
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.8);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Starter: AI-only VA (5 hrs/mo)
+              </li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.8);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Hybrid: AI automation + Human VA support
+              </li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.8);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Premium: Dedicated Human VA
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-white">Get on the Waitlist</a>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -1352,59 +1582,59 @@ a { color: inherit; text-decoration: none; }
         <div class="why-inner">
           <div class="why-text">
             <span class="section-label">Why ValuedHR</span>
-            <h2 id="why-heading">AI without humans isn't enough. Humans without AI don't scale.</h2>
-            <p>Most businesses face the same impossible choice: pay for a full internal team you can't afford, or try to use AI tools alone and end up with gaps, errors, and frustrated customers.</p>
-            <p>ValuedHR is the third option. We combine AI efficiency with expert human judgment — so you get the speed and cost savings of automation, plus the quality and nuance of real people when it actually matters.</p>
+            <h2 id="why-heading">HR should be about people — not paperwork and box-checking.</h2>
+            <p>Most HR firms treat your team like a liability to be managed. We treat your people like the strategic asset they actually are — because companies with thriving people outperform companies with compliant ones.</p>
+            <p>ValuedHR is the partner that shows up for the human side of business: the hard conversations, the burned-out leaders, the 55-year-old whose wisdom is being overlooked, and the team that just needs someone in their corner.</p>
             <div class="why-compare">
               <div class="compare-col compare-col--bad">
-                <p class="compare-label">Traditional BPO / Outsourcing</p>
+                <p class="compare-label">Compliance-First HR</p>
                 <ul role="list">
-                  <li>Sells headcount, not outcomes</li>
-                  <li>Margins eroding as AI replaces routine tasks</li>
-                  <li>Slow, expensive, generic</li>
-                  <li>No AI integration or reporting</li>
+                  <li>Treats people as risk to minimize</li>
+                  <li>Generic policies, no coaching</li>
+                  <li>Reactive — fixes problems after damage is done</li>
+                  <li>No focus on culture or wellbeing</li>
                 </ul>
               </div>
               <div class="compare-col compare-col--good">
                 <p class="compare-label">ValuedHR</p>
                 <ul role="list">
-                  <li>Sells outcomes and systems</li>
-                  <li>AI for speed + humans for quality</li>
-                  <li>Fixed-scope or retainer — clear ROI</li>
-                  <li>Monthly metrics and reporting included</li>
+                  <li>Treats people as your greatest asset</li>
+                  <li>Coaching + systems + real relationships</li>
+                  <li>Proactive — builds cultures people don't want to leave</li>
+                  <li>Wellbeing, engagement &amp; growth built in</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="why-visual" aria-hidden="true">
             <div class="roi-card">
-              <p class="roi-card-title">AI Support Desk ROI</p>
+              <p class="roi-card-title">The Cost of Ignoring Your People</p>
               <div class="roi-row">
-                <span>Cost per human ticket</span>
-                <strong>$6–$8</strong>
+                <span>Cost to replace one employee</span>
+                <strong>1–2× salary</strong>
               </div>
               <div class="roi-row roi-row--highlight">
-                <span>Cost per AI ticket</span>
-                <strong>$0.50–$0.70</strong>
+                <span>US cost of employee disengagement</span>
+                <strong>$550B/yr</strong>
               </div>
               <div class="roi-divider"></div>
               <div class="roi-row roi-big">
-                <span>Average ROI on AI support</span>
-                <strong class="roi-green">$3.50 per $1</strong>
+                <span>Revenue lift with strong culture</span>
+                <strong class="roi-green">Up to 4×</strong>
               </div>
-              <p class="roi-source">Source: Zendesk, Gartner 2026</p>
+              <p class="roi-source">Source: Gallup State of the Global Workplace 2025</p>
             </div>
             <div class="hr-card">
-              <p class="hr-card-title">HR Admin Costs Without Support</p>
+              <p class="hr-card-title">The Over-50 Workforce Opportunity</p>
               <div class="roi-row">
-                <span>Hours/week spent on HR admin</span>
-                <strong>10+ hrs</strong>
+                <span>Workers over 50 in the US workforce</span>
+                <strong>35%+</strong>
               </div>
               <div class="roi-row roi-row--highlight">
-                <span>Lost productivity cost</span>
-                <strong>~$3,300/wk</strong>
+                <span>Avg. burnout cost per employee/yr</span>
+                <strong>$3,400+</strong>
               </div>
-              <p class="roi-source">Source: Paychex 2025 Priorities Survey</p>
+              <p class="roi-source">Source: AARP, APA Work &amp; Wellbeing Survey 2025</p>
             </div>
           </div>
         </div>
@@ -1418,31 +1648,31 @@ a { color: inherit; text-decoration: none; }
       <div class="container">
         <div class="section-header">
           <span class="section-label">How It Works</span>
-          <h2 id="process-heading">From strategy call to systems running — in days, not months</h2>
+          <h2 id="process-heading">From first conversation to real transformation</h2>
         </div>
         <div class="process-steps">
           <div class="process-step">
             <div class="step-num">01</div>
-            <h3>Free Strategy Call</h3>
-            <p>Tell us where you're stuck. We'll listen, ask the right questions, and recommend the package that fits your situation — no pressure, no upsell.</p>
+            <h3>Free Discovery Call</h3>
+            <p>Tell us what's going on — with your team, your leadership, or your career. We listen first, then recommend the right service or coaching path for your situation.</p>
           </div>
           <div class="process-connector" aria-hidden="true"></div>
           <div class="process-step">
             <div class="step-num">02</div>
-            <h3>Scoped Proposal</h3>
-            <p>Within 48 hours you'll have a written scope of work, clear deliverables, timeline, and pricing. No vague retainers — you know exactly what you're getting.</p>
+            <h3>Personalized Plan</h3>
+            <p>Within 48 hours you'll receive a clear proposal: scope, deliverables, timeline, and pricing. No jargon, no fluff — just a plan that makes sense for where you are.</p>
           </div>
           <div class="process-connector" aria-hidden="true"></div>
           <div class="process-step">
             <div class="step-num">03</div>
-            <h3>We Build & Deploy</h3>
-            <p>Our team handles implementation — AI setup, HR documents, workflows, or all three. You stay informed at every step without managing the project yourself.</p>
+            <h3>We Partner Together</h3>
+            <p>Whether it's coaching, recruiting support, or a wellbeing program — we work alongside you. You're never handed a document and left alone to figure it out.</p>
           </div>
           <div class="process-connector" aria-hidden="true"></div>
           <div class="process-step">
             <div class="step-num">04</div>
-            <h3>Results & Reporting</h3>
-            <p>Sprint clients get a handoff session. Retainer clients get monthly reports showing outcomes: deflection rates, cost savings, HR metrics — real data, not activity reports.</p>
+            <h3>Measure &amp; Grow</h3>
+            <p>We track what matters: team retention, engagement, coaching milestones, recruiting outcomes. Real results, not activity reports.</p>
           </div>
         </div>
       </div>
@@ -1451,25 +1681,25 @@ a { color: inherit; text-decoration: none; }
     <!-- ═══════════════════════════════════════════════
          MARKET CONTEXT STRIP
     ═══════════════════════════════════════════════ -->
-    <section class="market-strip" aria-label="Market context">
+    <section class="market-strip" aria-label="Why people-first HR matters">
       <div class="container">
-        <p class="market-strip-label">Why now? The market has shifted.</p>
+        <p class="market-strip-label">Why people-first HR is the only HR that works long-term</p>
         <div class="market-stats">
           <div class="mstat">
-            <span class="mstat-num">$15.1B</span>
-            <span class="mstat-desc">AI customer service market in 2026</span>
+            <span class="mstat-num">70%</span>
+            <span class="mstat-desc">of US workers are disengaged at work (Gallup 2025)</span>
           </div>
           <div class="mstat">
-            <span class="mstat-num">91%</span>
-            <span class="mstat-desc">of CS leaders are under pressure to implement AI in 2026</span>
+            <span class="mstat-num">$322B</span>
+            <span class="mstat-desc">annual cost of burnout to the global economy</span>
           </div>
           <div class="mstat">
-            <span class="mstat-num">$80B</span>
-            <span class="mstat-desc">projected savings from AI in contact centers this year (Gartner)</span>
+            <span class="mstat-num">35%</span>
+            <span class="mstat-desc">of the US workforce is over 50 — and largely underserved</span>
           </div>
           <div class="mstat">
-            <span class="mstat-num">Only 25%</span>
-            <span class="mstat-desc">have actually operationalized AI support — the gap is your opportunity</span>
+            <span class="mstat-num">4×</span>
+            <span class="mstat-desc">revenue growth for companies with strong people cultures vs. competitors</span>
           </div>
         </div>
       </div>
@@ -1483,12 +1713,12 @@ a { color: inherit; text-decoration: none; }
         <div class="contact-inner">
           <div class="contact-text">
             <span class="section-label">Get Started</span>
-            <h2 id="contact-heading">Tell us what you need help with</h2>
-            <p>Book a free 30-minute strategy call. We'll review your situation, answer your questions, and recommend the right package. No commitment required.</p>
+            <h2 id="contact-heading">Let's talk about your people — or your next chapter.</h2>
+            <p>Book a free 30-minute discovery call. We'll listen, get to know your situation, and tell you honestly which service or coaching program is the right fit. No pressure, no pitch.</p>
             <div class="contact-trust">
               <div class="ctrust-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                Free 30-minute call
+                Free 30-minute discovery call
               </div>
               <div class="ctrust-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
@@ -1496,7 +1726,7 @@ a { color: inherit; text-decoration: none; }
               </div>
               <div class="ctrust-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                No long-term lock-in on sprints
+                Honest recommendation — even if it's not us
               </div>
             </div>
           </div>
@@ -1518,10 +1748,16 @@ a { color: inherit; text-decoration: none; }
             <div class="form-group">
               <label for="f-interest">What are you most interested in?</label>
               <select id="f-interest" name="interest">
-                <option value="">Select a package…</option>
-                <option>HR Essentials Sprint (30-Day Project)</option>
-                <option>AI-First Support Desk (Monthly)</option>
-                <option>Fractional People &amp; Ops Partner (Monthly)</option>
+                <option value="">Select a service…</option>
+                <option>Employee Relations Consulting</option>
+                <option>Recruiting Done Right</option>
+                <option>Wellbeing &amp; RewardIQ Program</option>
+                <option>The Encore Package (Coaching for Professionals 50+)</option>
+                <option>CEO / Founder Clarity Coaching</option>
+                <option>Executive Edge Coaching</option>
+                <option>ValuedHR Academy (Courses &amp; Workshops)</option>
+                <option>Freelance Taskers (Waitlist)</option>
+                <option>Outsource Your To-Do List (Waitlist)</option>
                 <option>Not sure yet — I need a recommendation</option>
               </select>
             </div>
@@ -1529,7 +1765,7 @@ a { color: inherit; text-decoration: none; }
               <label for="f-situation">Briefly describe your situation</label>
               <textarea id="f-situation" name="situation" rows="3" placeholder="What's the biggest challenge you're trying to solve right now?"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">Get My Free Strategy Call</button>
+            <button type="submit" class="btn btn-primary btn-full">Book My Free Discovery Call</button>
             <p class="form-privacy">We don't spam. Your information stays private.</p>
           </form>
         </div>
@@ -1556,24 +1792,24 @@ a { color: inherit; text-decoration: none; }
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
 
         <a href="blog.html" style="background:var(--color-surface);border-radius:var(--radius-xl);border:1px solid var(--color-border);padding:1.75rem;display:flex;flex-direction:column;gap:0.875rem;text-decoration:none;transition:box-shadow 180ms,transform 180ms;box-shadow:var(--shadow-sm);" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.transform=''">
-          <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:0.25em 0.75em;border-radius:9999px;background:#FFF8E1;color:#B8860B;width:fit-content;">Compliance</span>
-          <h3 style="font-size:var(--text-base);font-weight:700;color:var(--color-text);line-height:1.35;">Pay Transparency Laws 2026: What Small Businesses Need to Know Before Posting a Job</h3>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">18 states plus D.C. now require salary ranges in job postings — here's what your business must disclose.</p>
-          <span style="font-size:var(--text-xs);color:var(--color-text-faint);">June 22, 2026 · 6 min read</span>
+          <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:0.25em 0.75em;border-radius:9999px;background:var(--color-accent-light);color:var(--color-accent);width:fit-content;">Coaching</span>
+          <h3 style="font-size:var(--text-base);font-weight:700;color:var(--color-text);line-height:1.35;">The Encore Career: Why Professionals Over 50 Are the Most Underestimated Force in Business</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">30 years of experience isn't a liability — it's your greatest asset. Here's how to position it.</p>
+          <span style="font-size:var(--text-xs);color:var(--color-text-faint);">June 22, 2026 · 7 min read</span>
         </a>
 
         <a href="blog.html" style="background:var(--color-surface);border-radius:var(--radius-xl);border:1px solid var(--color-border);padding:1.75rem;display:flex;flex-direction:column;gap:0.875rem;text-decoration:none;transition:box-shadow 180ms,transform 180ms;box-shadow:var(--shadow-sm);" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.transform=''">
-          <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:0.25em 0.75em;border-radius:9999px;background:var(--color-primary-light);color:var(--color-primary);width:fit-content;">HR Best Practices</span>
-          <h3 style="font-size:var(--text-base);font-weight:700;color:var(--color-text);line-height:1.35;">Employee Handbook Template: What Every Growing Business Must Include</h3>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">The 12 sections that matter most, with templates you can adapt today.</p>
-          <span style="font-size:var(--text-xs);color:var(--color-text-faint);">June 9, 2026 · 6 min read</span>
+          <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:0.25em 0.75em;border-radius:9999px;background:var(--color-primary-light);color:var(--color-primary);width:fit-content;">Employee Relations</span>
+          <h3 style="font-size:var(--text-base);font-weight:700;color:var(--color-text);line-height:1.35;">5 Conversations Every Manager Avoids (And Exactly How to Have Them)</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">Conflict, performance, pay, burnout, and exit — the five conversations that define whether your team trusts you.</p>
+          <span style="font-size:var(--text-xs);color:var(--color-text-faint);">June 14, 2026 · 6 min read</span>
         </a>
 
         <a href="blog.html" style="background:var(--color-surface);border-radius:var(--radius-xl);border:1px solid var(--color-border);padding:1.75rem;display:flex;flex-direction:column;gap:0.875rem;text-decoration:none;transition:box-shadow 180ms,transform 180ms;box-shadow:var(--shadow-sm);" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.transform=''">
-          <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:0.25em 0.75em;border-radius:9999px;background:#FFF8E1;color:#B8860B;width:fit-content;">Compliance</span>
-          <h3 style="font-size:var(--text-base);font-weight:700;color:var(--color-text);line-height:1.35;">HR Compliance Checklist 2026: 15 Things Small Businesses Must Get Right</h3>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">Use this checklist to close your compliance gaps before they become fines.</p>
-          <span style="font-size:var(--text-xs);color:var(--color-text-faint);">June 2, 2026 · 5 min read</span>
+          <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:0.25em 0.75em;border-radius:9999px;background:#FFF8E1;color:#B8860B;width:fit-content;">Wellbeing</span>
+          <h3 style="font-size:var(--text-base);font-weight:700;color:var(--color-text);line-height:1.35;">Burnout Isn't a Badge of Honor: Building a Workplace Where People Actually Thrive</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">The warning signs, the cultural causes, and the practical steps every leader can take this week.</p>
+          <span style="font-size:var(--text-xs);color:var(--color-text-faint);">June 5, 2026 · 5 min read</span>
         </a>
 
       </div>
@@ -1594,7 +1830,7 @@ a { color: inherit; text-decoration: none; }
           </svg>
           <span class="logo-text">ValuedHR</span>
         </a>
-        <p>AI + Human HR &amp; Operations for growing businesses.</p>
+        <p>People-first HR, coaching &amp; development for growing businesses and thriving careers.</p>
         <div class="footer-social" aria-label="Follow ValuedHR on social media">
           <a href="https://www.facebook.com/valuedhr" target="_blank" rel="noopener" aria-label="Facebook">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -1614,14 +1850,19 @@ a { color: inherit; text-decoration: none; }
         <div class="footer-col">
           <p class="footer-col-title">Services</p>
           <ul role="list">
-            <li><a href="#services">HR Essentials Sprint</a></li>
-            <li><a href="#services">AI-First Support Desk</a></li>
-            <li><a href="#services">Fractional People &amp; Ops</a></li>
+            <li><a href="#services">Employee Relations</a></li>
+            <li><a href="#services">Recruiting</a></li>
+            <li><a href="#services">Wellbeing &amp; RewardIQ</a></li>
+            <li><a href="#coaching">The Encore Package</a></li>
+            <li><a href="#coaching">Executive Coaching</a></li>
+            <li><a href="#academy">ValuedHR Academy</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <p class="footer-col-title">Company</p>
+          <p class="footer-col-title">Our Brands</p>
           <ul role="list">
+            <li><a href="#sub-brands">Freelance Taskers</a></li>
+            <li><a href="#sub-brands">Outsource Your To-Do List</a></li>
             <li><a href="#why">Why ValuedHR</a></li>
             <li><a href="#process">How It Works</a></li>
             <li><a href="blog.html">Blog</a></li>
