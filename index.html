@@ -12,45 +12,45 @@
   <link rel="canonical" href="https://valuedhr.com/"/>
   <meta property="og:url" content="https://valuedhr.com/"/>
   <meta property="og:type" content="website" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"ValuedHR Business Services","url":"https://valuedhr.com","description":"ValuedHR is the human-centered HR partner for growing businesses — focused on employee relations, recruiting, leadership coaching, worker wellbeing, and the people who make work worth showing up for.","founder":{"@type":"Person","name":"Michelle Mendez"},"serviceType":["Employee Relations","Recruiting","Executive Coaching","HR Coaching","Worker Mental Health","Employee Engagement","Coaching for Professionals Over 50"],"areaServed":"US","sameAs":["https://valuedhr.com/blog.html"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"ValuedHR Business Services","url":"https://valuedhr.com","description":"ValuedHR is the human-centered HR partner for growing businesses — focused on employee relations, recruiting, leadership coaching, worker wellbeing, and the people who make work worth showing up for.","founder":{"@type":"Person","name":"Michelle Mendez","jobTitle":"Founder & Lead Coach"},"serviceType":["Employee Relations","Recruiting","Executive Coaching","HR Coaching","Worker Mental Health","Employee Engagement","Coaching for Professionals Over 50"],"areaServed":"US","sameAs":["https://valuedhr.com/blog.html"]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
 /* ════════════════════════════════════════════════════
    VALUEDHR — Design Tokens + Base
-   Palette: Navy authority (#0A1628), Teal precision (#00888F),
-   Warm cream background (#F8F7F3)
+   Palette: Midnight Navy (#0A1F3C), Signal Blue (#3B82F6),
+   Sky (#9DC3FF), Mist (#F5F6F8) · Apex identity system
 ════════════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
 
 :root,
 [data-theme='light'] {
   /* Surfaces */
-  --color-bg: #F8F7F3;
+  --color-bg: #F5F6F8;
   --color-surface: #FFFFFF;
-  --color-surface-2: #F3F1EC;
-  --color-border: #DDD9D2;
-  --color-divider: #E8E5DF;
+  --color-surface-2: #ECEEF2;
+  --color-border: #D8DCE3;
+  --color-divider: #E4E7ED;
 
   /* Text */
-  --color-text: #1A1815;
-  --color-text-muted: #6B6760;
-  --color-text-faint: #B0ADA6;
-  --color-text-inverse: #F8F7F3;
+  --color-text: #16181D;
+  --color-text-muted: #6B7280;
+  --color-text-faint: #A3A8B2;
+  --color-text-inverse: #F5F6F8;
 
-  /* Primary — Navy */
-  --color-primary: #0A1628;
-  --color-primary-hover: #162240;
-  --color-primary-light: #E8EAF0;
+  /* Primary — Midnight Navy */
+  --color-primary: #0A1F3C;
+  --color-primary-hover: #0D2850;
+  --color-primary-light: #E8EFFF;
 
-  /* Accent — Teal */
-  --color-accent: #00888F;
-  --color-accent-hover: #006D73;
-  --color-accent-light: #E0F4F5;
+  /* Accent — Signal Blue */
+  --color-accent: #3B82F6;
+  --color-accent-hover: #2563EB;
+  --color-accent-light: #EFF6FF;
 
-  /* Gold highlight */
+  /* Gold highlight (Encore Package) */
   --color-gold: #B8860B;
   --color-gold-light: #FFF8E1;
 
@@ -89,16 +89,16 @@
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(10,22,40,0.06);
-  --shadow-md: 0 4px 14px rgba(10,22,40,0.09);
-  --shadow-lg: 0 12px 36px rgba(10,22,40,0.12);
+  --shadow-sm: 0 1px 3px rgba(10,31,60,0.06);
+  --shadow-md: 0 4px 14px rgba(10,31,60,0.09);
+  --shadow-lg: 0 12px 36px rgba(10,31,60,0.12);
 
   /* Transitions */
   --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
 
   /* Fonts */
-  --font-display: 'Instrument Serif', Georgia, serif;
-  --font-body: 'Plus Jakarta Sans', 'Helvetica Neue', sans-serif;
+  --font-display: 'IBM Plex Mono', monospace;
+  --font-body: 'DM Sans', 'Helvetica Neue', sans-serif;
 
   /* Content widths */
   --content-narrow: 640px;
@@ -116,12 +116,12 @@
   --color-text-muted: #8B949E;
   --color-text-faint: #484F58;
   --color-text-inverse: #0D1117;
-  --color-primary: #58A6FF;
-  --color-primary-hover: #79BEFF;
-  --color-primary-light: #1C2A3A;
-  --color-accent: #3DD5DB;
-  --color-accent-hover: #25BCC2;
-  --color-accent-light: #122526;
+  --color-primary: #60A5FA;
+  --color-primary-hover: #93C5FD;
+  --color-primary-light: #1E3A5F;
+  --color-accent: #60A5FA;
+  --color-accent-hover: #93C5FD;
+  --color-accent-light: #1E3A5F;
   --color-gold: #F0C040;
   --color-gold-light: #2A2208;
   --color-success: #3FB950;
@@ -142,12 +142,12 @@
     --color-text-muted: #8B949E;
     --color-text-faint: #484F58;
     --color-text-inverse: #0D1117;
-    --color-primary: #58A6FF;
-    --color-primary-hover: #79BEFF;
-    --color-primary-light: #1C2A3A;
-    --color-accent: #3DD5DB;
-    --color-accent-hover: #25BCC2;
-    --color-accent-light: #122526;
+    --color-primary: #60A5FA;
+    --color-primary-hover: #93C5FD;
+    --color-primary-light: #1E3A5F;
+    --color-accent: #60A5FA;
+    --color-accent-hover: #93C5FD;
+    --color-accent-light: #1E3A5F;
     --color-gold: #F0C040;
     --color-gold-light: #2A2208;
   }
@@ -177,7 +177,7 @@ p, li { text-wrap: pretty; max-width: 72ch; }
 button { cursor: pointer; background: none; border: none; font: inherit; color: inherit; }
 input, select, textarea { font: inherit; color: inherit; }
 a { color: inherit; text-decoration: none; }
-::selection { background: rgba(0,136,143,0.18); }
+::selection { background: rgba(59,130,246,0.18); }
 :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; border-radius: var(--radius-sm); }
 
 /* ═══════════════════ LAYOUT ═══════════════════ */
@@ -211,7 +211,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--color-accent-hover);
   border-color: var(--color-accent-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(0,136,143,0.3);
+  box-shadow: 0 4px 16px rgba(59,130,246,0.3);
 }
 .btn-outline {
   background: transparent;
@@ -380,9 +380,8 @@ a { color: inherit; text-decoration: none; }
   color: var(--color-text);
 }
 .hero-headline em {
-  font-family: var(--font-display);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--color-accent);
 }
 .hero-sub {
@@ -621,7 +620,7 @@ a { color: inherit; text-decoration: none; }
   max-width: none;
 }
 .pkg-outcomes svg { flex-shrink: 0; color: var(--color-accent); margin-top: 3px; }
-.package-card--featured .pkg-outcomes svg { color: #3DD5DB; }
+.package-card--featured .pkg-outcomes svg { color: #60A5FA; }
 
 .pkg-stat-row {
   display: flex;
@@ -712,7 +711,7 @@ a { color: inherit; text-decoration: none; }
 .compare-col li { font-size: var(--text-sm); color: var(--color-text-muted); max-width: none; }
 .compare-col--good li { color: rgba(255,255,255,0.85); }
 .compare-col--bad li::before { content: "✗ "; color: #E05252; }
-.compare-col--good li::before { content: "✓ "; color: #3DD5DB; }
+.compare-col--good li::before { content: "✓ "; color: #60A5FA; }
 
 .why-visual { display: flex; flex-direction: column; gap: var(--space-4); }
 .roi-card, .hr-card {
@@ -918,7 +917,7 @@ a { color: inherit; text-decoration: none; }
 .form-group textarea:focus {
   outline: none;
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(0,136,143,0.12);
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
 }
 .form-group textarea { resize: vertical; min-height: 90px; }
 .form-privacy {
@@ -993,139 +992,38 @@ a { color: inherit; text-decoration: none; }
 
 /* ═══════════════════ SCROLL ANIMATIONS ═══════════════════ */
 .fade-up {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 0.4;
+  transform: translateY(14px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
 }
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* ═══════════════════ PRICING GATE ═══════════════════ */
-.pkg-price-wrap { position: relative; }
-.pkg-price-wrap.is-locked .pkg-price {
-  filter: blur(7px);
-  user-select: none;
-  pointer-events: none;
-}
-.pkg-price-unlock {
-  position: absolute;
-  inset: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-.pkg-price-wrap.is-locked .pkg-price-unlock { display: flex; }
-.pkg-unlock-btn {
-  display: inline-flex;
+/* ═══════════════════ QUOTE NOTE ═══════════════════ */
+.pkg-quote-note {
+  display: flex;
   align-items: center;
   gap: var(--space-2);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  color: var(--color-accent);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  padding: 0.5em 1em;
-  border-radius: var(--radius-full);
-  cursor: pointer;
-  box-shadow: var(--shadow-sm);
-  white-space: nowrap;
-}
-.pkg-unlock-btn:hover { box-shadow: var(--shadow-md); }
-.package-card--featured .pkg-unlock-btn { background: rgba(255,255,255,0.95); }
-
-.pgate-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(10,22,40,0.55);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-4);
-  z-index: 9999;
-}
-.pgate-overlay.is-open { display: flex; }
-.pgate-modal {
-  background: var(--color-surface);
-  border-radius: var(--radius-xl);
-  max-width: 420px;
-  width: 100%;
-  padding: var(--space-8);
-  box-shadow: var(--shadow-lg);
-  position: relative;
-}
-.pgate-close {
-  position: absolute;
-  top: var(--space-4);
-  right: var(--space-4);
-  background: none;
-  border: none;
-  font-size: 1.25rem;
-  line-height: 1;
-  cursor: pointer;
-  color: var(--color-text-muted);
-}
-.pgate-modal h3 {
-  font-size: var(--text-base);
-  font-weight: 800;
-  margin: 0 0 var(--space-2);
-  color: var(--color-text);
-}
-.pgate-modal p.pgate-sub {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  margin: 0 0 var(--space-6);
-}
-.pgate-modal label {
-  display: block;
-  font-size: var(--text-xs);
-  font-weight: 600;
-  color: var(--color-text);
-  margin-bottom: var(--space-1);
-}
-.pgate-modal input[type="text"],
-.pgate-modal input[type="email"] {
-  width: 100%;
-  padding: 0.65em 0.85em;
-  border: 1px solid var(--color-border);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-success-light);
   border-radius: var(--radius-md);
   font-size: var(--text-sm);
-  margin-bottom: var(--space-4);
-  background: var(--color-surface);
-  color: var(--color-text);
+  color: var(--color-success);
+  font-weight: 500;
 }
-.pgate-modal button[type="submit"] {
-  width: 100%;
-  padding: 0.75em;
-  border: none;
-  border-radius: var(--radius-md);
-  background: var(--color-accent);
-  color: #fff;
-  font-weight: 700;
-  font-size: var(--text-sm);
-  cursor: pointer;
-}
-.pgate-modal button[type="submit"]:disabled { opacity: 0.6; cursor: not-allowed; }
-.pgate-error {
-  color: #C0392B;
-  font-size: var(--text-xs);
-  margin: 0 0 var(--space-4);
-  display: none;
-}
-.pgate-error.is-visible { display: block; }
-.pgate-privacy {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  margin: var(--space-3) 0 0;
+.pkg-quote-note svg { flex-shrink: 0; }
+.package-card--featured .pkg-quote-note {
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.9);
 }
 
 /* ═══ RESPONSIVE: inline grid sections ═══ */
 @media (max-width: 768px) {
   #coaching .container > div,
-  #sub-brands .container > .section-header ~ div { grid-template-columns: 1fr !important; }
-  #sub-brands .container > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+  #more .container > .section-header ~ div { grid-template-columns: 1fr !important; }
+  #more .container > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
 }
   </style>
     <script src="https://cdn.pagesense.io/js/valuedhr/256d9da17dfa4f46bd9cbb37c6ef86e2.js"></script>
@@ -1138,18 +1036,16 @@ a { color: inherit; text-decoration: none; }
   <header class="site-header" id="site-header">
     <nav class="nav-inner container">
       <a href="/" class="logo" aria-label="ValuedHR home">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-          <rect width="36" height="36" rx="8" fill="var(--color-primary)"/>
-          <path d="M9 11h7l5 8 5-8h1" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="18" cy="24" r="3.5" fill="none" stroke="#fff" stroke-width="2.2"/>
+        <svg width="36" height="36" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <path d="M20 32 L50 76 L80 32" stroke="#0A1F3C" stroke-width="13" stroke-linecap="square"/>
+          <path d="M36 32 L50 56 L64 32" stroke="#3B82F6" stroke-width="9" stroke-linecap="square"/>
         </svg>
-        <span class="logo-text">ValuedHR</span>
+        <span class="logo-text"><span style="font-weight:500;">Valued</span><span style="color:var(--color-accent);font-weight:700;">HR</span></span>
       </a>
       <ul class="nav-links" role="list">
         <li><a href="#services">Services</a></li>
         <li><a href="#coaching">Coaching</a></li>
-        <li><a href="#academy">Academy</a></li>
-        <li><a href="#sub-brands">Our Brands</a></li>
+        <li><a href="#more">Academy &amp; Brands</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -1167,8 +1063,7 @@ a { color: inherit; text-decoration: none; }
       <ul role="list">
         <li><a href="#services">Services</a></li>
         <li><a href="#coaching">Coaching</a></li>
-        <li><a href="#academy">Academy</a></li>
-        <li><a href="#sub-brands">Our Brands</a></li>
+        <li><a href="#more">Academy &amp; Brands</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#contact" class="btn btn-primary">Book a Discovery Call</a></li>
@@ -1278,15 +1173,9 @@ a { color: inherit; text-decoration: none; }
               <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Onboarding &amp; offboarding processes</li>
               <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Employee handbook &amp; core policy docs</li>
             </ul>
-            <div class="pkg-price-wrap is-locked">
-              <div class="pkg-price">
-                <span class="price-from">Starting at</span>
-                <span class="price-num">$1,500<small>/mo</small></span>
-                <span class="price-note">retainer or project rate</span>
-              </div>
-              <div class="pkg-price-unlock">
-                <button type="button" class="pkg-unlock-btn js-pgate-open">🔒 Unlock pricing</button>
-              </div>
+            <div class="pkg-quote-note">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              You'll receive a customized quote within 24 hours of your discovery call.
             </div>
             <a href="#contact" class="btn btn-outline">Get Employee Relations Help</a>
           </article>
@@ -1311,15 +1200,9 @@ a { color: inherit; text-decoration: none; }
               <div class="pkg-stat"><span>3×</span><small>faster than avg. hiring timeline</small></div>
               <div class="pkg-stat"><span>90%</span><small>90-day retention rate</small></div>
             </div>
-            <div class="pkg-price-wrap is-locked">
-              <div class="pkg-price">
-                <span class="price-from">Starting at</span>
-                <span class="price-num">$2,500<small>/hire</small></span>
-                <span class="price-note">or monthly recruiting retainer</span>
-              </div>
-              <div class="pkg-price-unlock">
-                <button type="button" class="pkg-unlock-btn js-pgate-open">🔒 Unlock pricing</button>
-              </div>
+            <div class="pkg-quote-note">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              You'll receive a customized quote within 24 hours of your discovery call.
             </div>
             <a href="#contact" class="btn btn-white">Talk About Your Next Hire</a>
           </article>
@@ -1340,15 +1223,9 @@ a { color: inherit; text-decoration: none; }
               <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Manager training: psychological safety</li>
               <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Culture &amp; engagement strategy</li>
             </ul>
-            <div class="pkg-price-wrap is-locked">
-              <div class="pkg-price">
-                <span class="price-from">Starting at</span>
-                <span class="price-num">$1,200<small>/mo</small></span>
-                <span class="price-note">tiered by team size</span>
-              </div>
-              <div class="pkg-price-unlock">
-                <button type="button" class="pkg-unlock-btn js-pgate-open">🔒 Unlock pricing</button>
-              </div>
+            <div class="pkg-quote-note">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              You'll receive a customized quote within 24 hours of your discovery call.
             </div>
             <a href="#contact" class="btn btn-outline">Build a Healthier Team Culture</a>
           </article>
@@ -1363,28 +1240,28 @@ a { color: inherit; text-decoration: none; }
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items:center;">
           <div style="display:flex; flex-direction:column; gap:var(--space-5); color:#fff;">
             <span style="font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-accent);">Our Hero Offer · Pillar 2: Coaching</span>
-            <h2 id="encore-heading" style="font-size:var(--text-2xl);font-weight:800;letter-spacing:-0.025em;line-height:1.15;color:#fff;">The Encore Package <span style="font-family:var(--font-display);font-style:italic;font-weight:400;">for Professionals Over 50</span></h2>
+            <h2 id="encore-heading" style="font-size:var(--text-2xl);font-weight:800;letter-spacing:-0.025em;line-height:1.15;color:#fff;">The Encore Package <span style="font-family:var(--font-body);font-style:italic;font-weight:400;">for Professionals Over 50</span></h2>
             <p style="color:rgba(255,255,255,0.75);font-size:var(--text-base);line-height:1.7;">You have 30 years of experience, hard-earned wisdom, and more to give — and the workplace keeps telling you you're "overqualified." That ends here. The Encore Package is a custom coaching program designed for experienced professionals who are ready to reposition, rebuild confidence, and lead their next chapter on their own terms.</p>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--space-3);">
               <li style="display:flex;align-items:flex-start;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.85);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
                 Career repositioning &amp; personal brand strategy
               </li>
               <li style="display:flex;align-items:flex-start;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.85);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
                 Confidence &amp; identity rebuilding after career disruption
               </li>
               <li style="display:flex;align-items:flex-start;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.85);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
                 Navigating ageism &amp; advocating for your worth
               </li>
               <li style="display:flex;align-items:flex-start;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.85);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
                 Leadership legacy work — defining what you want to build next
               </li>
               <li style="display:flex;align-items:flex-start;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.85);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
-                3-month custom coaching engagement, 1:1 with Michelle
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><polyline points="20 6 9 17 4 12"/></svg>
+                3-month custom coaching engagement, 1:1 with Michelle, Founder &amp; Lead Coach
               </li>
             </ul>
             <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;padding-top:var(--space-2);">
@@ -1431,143 +1308,73 @@ a { color: inherit; text-decoration: none; }
       </div>
     </section>
 
-    <!-- ═══ PILLAR 4: ACADEMY ═══ -->
-    <section style="padding-block: clamp(3rem, 8vw, 5rem); background: var(--color-surface-2);" id="academy" aria-labelledby="academy-heading">
+    <!-- ═══ MORE FROM VALUEDHR (Academy + Brands, condensed) ═══ -->
+    <section style="padding-block: clamp(3rem, 8vw, 5rem); background: var(--color-surface-2);" id="more" aria-labelledby="more-heading">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Pillar 4 · Learning &amp; Development</span>
-          <h2 id="academy-heading">ValuedHR Academy</h2>
-          <p>Courses, ebooks, and live workshops that give leaders, managers, and workers the tools they actually need — without the corporate fluff.</p>
-        </div>
-        <div class="packages-grid">
-          <article class="package-card" aria-labelledby="acad1-title">
-            <div class="pkg-tag">Self-Paced</div>
-            <div class="pkg-icon pkg-icon--1">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            </div>
-            <h3 id="acad1-title" class="pkg-title">Online Courses</h3>
-            <p class="pkg-duration">Self-Paced · Always Available</p>
-            <p class="pkg-desc">Leadership fundamentals, communication, conflict resolution, resilience, and people management — built for busy professionals who need real skills, not theory.</p>
-            <ul class="pkg-outcomes" role="list">
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Managing people &amp; difficult conversations</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Building resilience &amp; preventing burnout</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Recruiting &amp; interviewing essentials</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Leadership fundamentals for new managers</li>
-            </ul>
-            <a href="#contact" class="btn btn-outline">Join the Waitlist</a>
-          </article>
-
-          <article class="package-card package-card--featured" aria-labelledby="acad2-title">
-            <div class="pkg-tag pkg-tag--white">Free &amp; Paid Guides</div>
-            <div class="pkg-icon pkg-icon--2">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            </div>
-            <h3 id="acad2-title" class="pkg-title">Ebooks &amp; Playbooks</h3>
-            <p class="pkg-duration">Instant Download · Free &amp; Premium</p>
-            <p class="pkg-desc">Practical guides built for solopreneurs, small business owners, and working professionals. From the Over-50 Career Playbook to the Manager's Guide to Hard Conversations — tools you'll actually use.</p>
-            <ul class="pkg-outcomes" role="list">
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> The Encore Playbook: Your Career After 50</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Manager's Guide to Hard Conversations</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> HR Templates: Offer Letters, Handbooks &amp; More</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> The Anti-Burnout Guide for Leaders</li>
-            </ul>
-            <a href="#contact" class="btn btn-white">Get Free Resources</a>
-          </article>
-
-          <article class="package-card" aria-labelledby="acad3-title">
-            <div class="pkg-tag">Live &amp; Virtual</div>
-            <div class="pkg-icon pkg-icon--3">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3 id="acad3-title" class="pkg-title">Live Workshops</h3>
-            <p class="pkg-duration">Monthly Group Sessions</p>
-            <p class="pkg-desc">Open enrollment and private team workshops on leadership, employee relations, mental wellness at work, and more. Interactive, practical, and worth showing up for.</p>
-            <ul class="pkg-outcomes" role="list">
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Monthly open enrollment virtual sessions</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Private team training (custom topics)</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Certificate of completion included</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Q&amp;A with Michelle after each session</li>
-            </ul>
-            <div class="pkg-price-wrap is-locked">
-              <div class="pkg-price">
-                <span class="price-from">Starting at</span>
-                <span class="price-num">$97<small>/seat</small></span>
-                <span class="price-note">group &amp; corporate rates available</span>
-              </div>
-              <div class="pkg-price-unlock">
-                <button type="button" class="pkg-unlock-btn js-pgate-open">🔒 Unlock pricing</button>
-              </div>
-            </div>
-            <a href="#contact" class="btn btn-outline">Reserve Your Seat</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ SUB-BRANDS ═══ -->
-    <section style="padding-block: clamp(3rem, 8vw, 5rem); background: var(--color-bg);" id="sub-brands" aria-labelledby="subbrands-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">ValuedHR Family of Brands</span>
-          <h2 id="subbrands-heading">Two more ways we help you get things done</h2>
-          <p>Coming soon — two sub-brands built to extend ValuedHR's mission beyond traditional HR.</p>
+          <span class="section-label">More from ValuedHR</span>
+          <h2 id="more-heading">Learning, tools &amp; what's coming next</h2>
+          <p>From self-paced courses to vetted freelancers — more ways to grow, lead, and get things done.</p>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);">
 
-          <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-8);display:flex;flex-direction:column;gap:var(--space-5);">
+          <!-- Academy teaser -->
+          <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-8);display:flex;flex-direction:column;gap:var(--space-4);">
             <div style="display:flex;align-items:center;gap:var(--space-3);">
-              <div style="width:52px;height:52px;border-radius:var(--radius-lg);background:var(--color-accent-light);display:grid;place-items:center;flex-shrink:0;">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+              <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:var(--color-primary-light);display:grid;place-items:center;flex-shrink:0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
               </div>
               <div>
-                <div style="font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--color-accent);margin-bottom:2px;">Coming Soon</div>
-                <h3 style="font-size:var(--text-lg);font-weight:800;letter-spacing:-0.02em;">Freelance Taskers</h3>
+                <div style="font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--color-accent);margin-bottom:2px;">Pillar 4 · Learning &amp; Development</div>
+                <h3 style="font-size:var(--text-lg);font-weight:800;letter-spacing:-0.02em;">ValuedHR Academy</h3>
               </div>
             </div>
-            <p style="color:var(--color-text-muted);font-size:var(--text-base);line-height:1.65;"><em>Skilled. Trained. Ready to work.</em> A curated marketplace of ValuedHR-vetted freelancers for business support tasks — admin, research, HR support, content, scheduling, and more. Every tasker goes through our onboarding and skill certification before they're listed.</p>
+            <p style="color:var(--color-text-muted);font-size:var(--text-base);line-height:1.65;">Online courses, ebooks, playbooks, and live workshops — practical tools for leaders, managers, and professionals who need real skills, not theory.</p>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--space-2);">
               <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:var(--color-text-muted);">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                Vetted Taskers · Certified Taskers · Specialists
+                Self-paced courses &amp; ebooks
               </li>
               <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:var(--color-text-muted);">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                Upskill through ValuedHR Academy while you earn
+                Monthly live workshops with Michelle, Founder &amp; Lead Coach
               </li>
               <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:var(--color-text-muted);">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                ValuedHR business clients post tasks directly
+                Free resources &amp; premium playbooks
               </li>
             </ul>
-            <a href="#contact" class="btn btn-outline">Join the Freelancer Waitlist</a>
+            <a href="#contact" class="btn btn-outline" style="width:fit-content;">Join the Academy Waitlist</a>
           </div>
 
-          <div style="background:var(--color-primary);border:1px solid var(--color-primary);border-radius:var(--radius-xl);padding:var(--space-8);display:flex;flex-direction:column;gap:var(--space-5);color:#fff;">
-            <div style="display:flex;align-items:center;gap:var(--space-3);">
-              <div style="width:52px;height:52px;border-radius:var(--radius-lg);background:rgba(255,255,255,0.12);display:grid;place-items:center;flex-shrink:0;">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <!-- Brands teaser -->
+          <div style="background:var(--color-primary);border-radius:var(--radius-xl);padding:var(--space-8);display:flex;flex-direction:column;gap:var(--space-4);color:#fff;">
+            <div>
+              <div style="font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--color-accent);margin-bottom:var(--space-2);">Coming Soon</div>
+              <h3 style="font-size:var(--text-lg);font-weight:800;letter-spacing:-0.02em;color:#fff;">Our Sub-Brands</h3>
+              <p style="color:rgba(255,255,255,0.7);font-size:var(--text-sm);margin-top:var(--space-2);">Two more ways we extend our mission beyond traditional HR.</p>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+              <div style="display:flex;gap:var(--space-3);align-items:flex-start;">
+                <div style="width:40px;height:40px;border-radius:var(--radius-md);background:rgba(255,255,255,0.1);display:grid;place-items:center;flex-shrink:0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                </div>
+                <div>
+                  <p style="font-weight:700;color:#fff;font-size:var(--text-sm);">Freelance Taskers</p>
+                  <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.6);margin-top:2px;">A curated marketplace of ValuedHR-vetted freelancers for business support tasks.</p>
+                </div>
               </div>
-              <div>
-                <div style="font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--color-accent);margin-bottom:2px;">Coming Soon</div>
-                <h3 style="font-size:var(--text-lg);font-weight:800;letter-spacing:-0.02em;color:#fff;">Outsource Your To-Do List</h3>
+              <div style="display:flex;gap:var(--space-3);align-items:flex-start;">
+                <div style="width:40px;height:40px;border-radius:var(--radius-md);background:rgba(255,255,255,0.1);display:grid;place-items:center;flex-shrink:0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <div>
+                  <p style="font-weight:700;color:#fff;font-size:var(--text-sm);">Outsource Your To-Do List</p>
+                  <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.6);margin-top:2px;">Human VA, AI assistant, or hybrid — your time back, on your terms.</p>
+                </div>
               </div>
             </div>
-            <p style="color:rgba(255,255,255,0.75);font-size:var(--text-base);line-height:1.65;"><em>Your time back. Human or AI.</em> Virtual assistant services for time-starved entrepreneurs, executives, and over-50 professionals. You choose: a skilled human VA sourced from Freelance Taskers, or an AI-powered assistant — or both.</p>
-            <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--space-2);">
-              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.8);">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                Starter: AI-only VA (5 hrs/mo)
-              </li>
-              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.8);">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                Hybrid: AI automation + Human VA support
-              </li>
-              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.8);">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3DD5DB" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                Premium: Dedicated Human VA
-              </li>
-            </ul>
-            <a href="#contact" class="btn btn-white">Get on the Waitlist</a>
+            <a href="#contact" class="btn btn-white" style="width:fit-content;">Get on the Waitlist</a>
           </div>
 
         </div>
@@ -1823,12 +1630,11 @@ a { color: inherit; text-decoration: none; }
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="/" class="logo" aria-label="ValuedHR home">
-          <svg width="30" height="30" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-            <rect width="36" height="36" rx="8" fill="var(--color-primary)"/>
-            <path d="M9 11h7l5 8 5-8h1" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="18" cy="24" r="3.5" fill="none" stroke="#fff" stroke-width="2.2"/>
+          <svg width="30" height="30" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <path d="M20 32 L50 76 L80 32" stroke="#3B82F6" stroke-width="13" stroke-linecap="square"/>
+            <path d="M36 32 L50 56 L64 32" stroke="#9DC3FF" stroke-width="9" stroke-linecap="square"/>
           </svg>
-          <span class="logo-text">ValuedHR</span>
+          <span class="logo-text"><span style="font-weight:500;">Valued</span><span style="color:#3B82F6;font-weight:700;">HR</span></span>
         </a>
         <p style="font-style:italic;font-size:var(--text-base);color:rgba(255,255,255,0.8);font-family:var(--font-display);">Experience valued here.</p>
         <p>People-first HR, coaching &amp; development for growing businesses and thriving careers.</p>
@@ -1990,140 +1796,6 @@ a { color: inherit; text-decoration: none; }
 
   </script>
 
-  <!-- ═══════════════════════════════════════════════
-       PRICING GATE MODAL
-  ═══════════════════════════════════════════════ -->
-  <div class="pgate-overlay" id="pgate-overlay" aria-hidden="true">
-    <div class="pgate-modal" role="dialog" aria-modal="true" aria-labelledby="pgate-title">
-      <button type="button" class="pgate-close" id="pgate-close" aria-label="Close">&times;</button>
-
-      <!-- Step 1: Form -->
-      <div id="pgate-step-form">
-        <h3 id="pgate-title">Get your personalized rate card</h3>
-        <p class="pgate-sub">Enter your details and we'll email you a full proposal — with pricing, package options, and a link to get started or book a call.</p>
-        <form id="pgate-form" novalidate>
-          <label for="pgate-name">Full name</label>
-          <input type="text" id="pgate-name" autocomplete="name" placeholder="Jane Smith" required />
-          <label for="pgate-email">Work email</label>
-          <input type="email" id="pgate-email" autocomplete="email" placeholder="jane@company.com" required />
-          <p class="pgate-error" id="pgate-error">Please enter your name and a valid email address.</p>
-          <button type="submit" id="pgate-submit">Send My Rate Card →</button>
-          <p class="pgate-privacy">No spam — just your proposal. Unsubscribe anytime.</p>
-        </form>
-      </div>
-
-      <!-- Step 2: Confirmation (hidden until submitted) -->
-      <div id="pgate-step-confirm" style="display:none; text-align:center; padding: var(--space-4) 0;">
-        <div style="font-size:2.5rem; margin-bottom: var(--space-4);">📬</div>
-        <h3 style="margin-bottom: var(--space-2);">Check your inbox!</h3>
-        <p class="pgate-sub" id="pgate-confirm-msg">We've sent your ValuedHR rate card to <strong id="pgate-confirm-email"></strong>. Click the link in the email to view full pricing, Stripe payment options, and book a call.</p>
-        <button type="button" class="pgate-close" style="position:static; font-size:var(--text-sm); color:var(--color-accent); font-weight:600; margin-top:var(--space-4); display:inline-block;">Close</button>
-      </div>
-    </div>
-  </div>
-
-  <script>
-  (function(){
-    var overlay = document.getElementById('pgate-overlay');
-    var form = document.getElementById('pgate-form');
-    var nameInput = document.getElementById('pgate-name');
-    var emailInput = document.getElementById('pgate-email');
-    var errorEl = document.getElementById('pgate-error');
-    var submitBtn = document.getElementById('pgate-submit');
-    var stepForm = document.getElementById('pgate-step-form');
-    var stepConfirm = document.getElementById('pgate-step-confirm');
-    var confirmEmail = document.getElementById('pgate-confirm-email');
-
-    // Always keep pricing locked — only unlocked via proposal page
-    document.querySelectorAll('.pkg-price-wrap').forEach(function(wrap){
-      wrap.classList.add('is-locked');
-    });
-
-    function openModal(){
-      overlay.classList.add('is-open');
-      overlay.setAttribute('aria-hidden', 'false');
-      stepForm.style.display = '';
-      stepConfirm.style.display = 'none';
-      nameInput.focus();
-    }
-    function closeModal(){
-      overlay.classList.remove('is-open');
-      overlay.setAttribute('aria-hidden', 'true');
-      form.reset();
-    }
-
-    document.querySelectorAll('.js-pgate-open').forEach(function(btn){
-      btn.addEventListener('click', openModal);
-    });
-    document.querySelectorAll('.pgate-close').forEach(function(btn){
-      btn.addEventListener('click', closeModal);
-    });
-    overlay.addEventListener('click', function(e){
-      if (e.target === overlay) closeModal();
-    });
-    document.addEventListener('keydown', function(e){
-      if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeModal();
-    });
-
-    function isValidEmail(v){
-      var at = v.indexOf('@'), dot = v.lastIndexOf('.');
-      return at > 0 && dot > at + 1 && dot + 2 < v.length;
-    }
-
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var fullName = nameInput.value.trim();
-      var email = emailInput.value.trim();
-      if (!fullName || !email || !isValidEmail(email)) {
-        errorEl.classList.add('is-visible');
-        return;
-      }
-      errorEl.classList.remove('is-visible');
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending…';
-
-      var parts = fullName.split(/\s+/);
-      var lastName = parts.length > 1 ? parts.pop() : parts[0];
-      var firstName = parts.length > 0 ? parts.join(' ') : '';
-
-      var formData = new FormData();
-      formData.append('xnQsjsdp', '2aca8732aae656acfcae029c9788120279dd249885b72e208381c746fb2df0b5');
-      formData.append('zc_gad', '');
-      formData.append('xmIwtLD', '90334662aaad9766a77f35fd9c1cae3690b70187f9b69263e1bc254ad267fe81e987ad2ff0515dca1b24c559c09d13cb');
-      formData.append('actionType', 'TGVhZHM=');
-      formData.append('returnURL', 'null');
-      formData.append('ldeskuid', '');
-      formData.append('LDTuvid', '');
-      formData.append('aG9uZXlwb3Q', '');
-      formData.append('First Name', firstName);
-      formData.append('Last Name', lastName);
-      formData.append('Email', email);
-      formData.append('Lead Source', 'Pricing Gate');
-
-      try {
-        if (window.$zoho && window.$zoho.salesiq && window.$zoho.salesiq.visitor) {
-          window.$zoho.salesiq.visitor.name(fullName);
-          window.$zoho.salesiq.visitor.email(email);
-        }
-      } catch(err){}
-
-      function finish(){
-        // Show confirmation step
-        confirmEmail.textContent = email;
-        stepForm.style.display = 'none';
-        stepConfirm.style.display = '';
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send My Rate Card →';
-      }
-
-      fetch('https://crm.zoho.com/crm/WebToLeadForm', {
-        method: 'POST',
-        body: formData,
-        cache: 'no-cache'
-      }).then(finish).catch(finish);
-    });
-  })();
-  </script>
 
       <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script>
     <script id="zsiqscript" src="https://salesiq.zoho.com/widget?wc=siqec7f317f631039c2620c40c836d39c5d369bdd9c7d8978f3f03f7b99a1f78c46" defer></script>
