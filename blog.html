@@ -11,16 +11,16 @@
 <meta property="og:description" content="Practical HR guidance for small and growing businesses."/>
 <meta property="og:url" content="https://valuedhr.com/blog.html"/>
 <meta property="og:type" content="website"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"ValuedHR Blog","description":"Practical HR guidance for small and growing businesses","url":"https://valuedhr.com/blog.html","publisher":{"@type":"Organization","name":"ValuedHR","url":"https://valuedhr.com"}}</script>
 <style>
-:root{--bg:#F8F7F3;--text:#1A1815;--primary:#0A1628;--accent:#00888F;--muted:#6B6760;--card:#FFFFFF;--font-d:"Instrument Serif",Georgia,serif;--font-b:"Plus Jakarta Sans",sans-serif}
+:root{--bg:#F5F6F8;--text:#16181D;--primary:#0A1F3C;--accent:#3B82F6;--muted:#6B7280;--card:#FFFFFF;--font-d:'DM Sans','Helvetica Neue',sans-serif;--font-b:'DM Sans','Helvetica Neue',sans-serif}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--font-b);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 /* NAV */
 nav{background:var(--primary);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
-nav .logo{color:#fff;font-family:var(--font-d);font-size:1.4rem}
+nav a.logo,nav .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 nav .nav-links a{color:rgba(255,255,255,0.75);font-size:.875rem;font-weight:500;margin-left:1.5rem;transition:color .2s}
 nav .nav-links a:hover{color:#fff}
 /* HERO */
@@ -40,7 +40,7 @@ nav .nav-links a:hover{color:#fff}
 .featured-section{max-width:1140px;margin:3rem auto 0;padding:0 2rem}
 .featured-section h2{font-family:var(--font-d);font-size:1.75rem;color:var(--primary);margin-bottom:1.5rem}
 .featured-card{display:grid;grid-template-columns:1fr 1fr;gap:2rem;background:var(--primary);border-radius:1.25rem;overflow:hidden;color:#fff}
-.featured-card .featured-img{background:linear-gradient(135deg,#0d1e36 0%,#00888F 100%);display:flex;align-items:center;justify-content:center;padding:3rem;min-height:280px}
+.featured-card .featured-img{background:linear-gradient(135deg,#0d1e36 0%,#3B82F6 100%);display:flex;align-items:center;justify-content:center;padding:3rem;min-height:280px}
 .featured-card .featured-img span{font-family:var(--font-d);font-size:3.5rem;line-height:1;color:rgba(255,255,255,.15);text-align:center}
 .featured-card .featured-body{padding:2.5rem 2.5rem 2.5rem 0;display:flex;flex-direction:column;justify-content:center}
 .featured-card .tag{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem}
@@ -65,19 +65,19 @@ nav .nav-links a:hover{color:#fff}
 .nl-form{display:flex;gap:.75rem;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
 .nl-form input{flex:1;min-width:220px;padding:.875rem 1.25rem;border-radius:.5rem;border:none;font-family:var(--font-b);font-size:1rem;outline:none}
 .nl-form button{background:var(--accent);color:#fff;border:none;padding:.875rem 1.75rem;border-radius:.5rem;font-family:var(--font-b);font-size:1rem;font-weight:700;cursor:pointer;white-space:nowrap}
-.nl-form button:hover{background:#007a80}
+.nl-form button:hover{background:#2563EB}
 /* FOOTER */
 footer{background:#060e1a;color:rgba(255,255,255,.5);text-align:center;padding:2rem;font-size:.875rem}
 footer a{color:var(--accent)}
 /* HIDDEN */
 .article-card[hidden]{display:none}
 @media(max-width:640px){.featured-card{grid-template-columns:1fr}.featured-card .featured-img{display:none}.featured-card .featured-body{padding:2rem}}
-</style>
+.hero .cat,.blog-hero .eyebrow,.card-tag,.tag,.back,.hero .meta,.article-card .card-meta{font-family:'IBM Plex Mono',monospace!important;}</style>
 </head>
 <body>
 
 <nav>
-  <span class="logo">ValuedHR</span>
+  <a href="/index.html" class="logo" style="display:flex;align-items:center;gap:10px;text-decoration:none;"><svg width="30" height="30" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M20 32 L50 76 L80 32" stroke="#3B82F6" stroke-width="13" stroke-linecap="square"/><path d="M36 32 L50 56 L64 32" stroke="#9DC3FF" stroke-width="9" stroke-linecap="square"/></svg><span style="font-family:'DM Sans',sans-serif;font-size:1.25rem;letter-spacing:-0.5px;"><span style="font-weight:500;color:rgba(255,255,255,0.94);">Valued</span><span style="font-weight:700;color:#3B82F6;">HR</span></span></a>
   <div class="nav-links">
     <a href="/index.html">Home</a>
     <a href="/blog.html">Blog</a>
