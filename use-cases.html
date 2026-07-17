@@ -79,45 +79,10 @@ footer a{color:var(--accent)}
 <div class="hero">
   <div class="eyebrow">Real Work, Not Theory</div>
   <h1>Automation &amp; AI Use Cases</h1>
-  <p>Businesses do not need more AI opinions. They need to see what actually gets built, what it runs on, and what it takes to keep it running. Here is real automation work ValuedHR has delivered for clients — the problem, the build, and the honest trade-offs.</p>
+  <p>Businesses do not need more AI opinions. They need to see what actually gets built, what it runs on, and what it takes to keep it running. This page will show real automation work ValuedHR has delivered for clients — the problem, the build, and the honest trade-offs.</p>
 </div>
 
 <div class="wrap">
-
-  <div class="case">
-    <div class="case-head">
-      <span class="case-tag">Event Marketing &middot; SMS Automation</span>
-      <h2>Zero-Touch Seminar Detection &amp; Attendee Engagement</h2>
-      <p class="client">Client: Mark Patrick Seminars (live-event weight-loss &amp; stop-smoking seminars)</p>
-    </div>
-    <div class="case-body">
-
-      <h3>The Problem</h3>
-      <p>Mark Patrick Seminars books recurring live events through a third-party portal. New seminars get added on an ongoing basis, but there was no notification system in place — the only way to find out a new seminar existed was to manually check the public website. Seminars could go unnoticed until close to the event date, and registrants received no structured engagement between signing up and showing up.</p>
-
-      <h3>What We Built</h3>
-      <ul>
-        <li>Automated seminar detection that checks the booking platform daily and logs every new event to a CRM, with an instant alert — replacing manual website checks entirely.</li>
-        <li>A three-touch SMS reminder sequence (48 hours out, 24 hours out, morning-of), each with a distinct message strategy: trust-building, engagement, and motivation.</li>
-        <li>A custom link-tracking system built without any third-party tool: SMS links route through a tracking webhook that logs the click, then redirects instantly to the real destination, so engagement is measurable per campaign.</li>
-        <li>A full audit trail — every message sent and every link clicked logs automatically.</li>
-      </ul>
-
-      <h3>The Stack</h3>
-      <div class="stack"><span>Make.com</span><span>REST API integration</span><span>Notion (CRM)</span><span>Slack alerting</span><span>SMS API</span><span>Custom webhook tracking</span></div>
-
-      <h3>The Honest Part</h3>
-      <div class="callout"><p>Partway through the build, the booking platform's own registrant-lookup API turned out to have no working filter — every query silently returned the entire unfiltered dataset instead of just one event's attendees. We diagnosed it precisely, filed a specific fix request with the vendor, and built a manual fallback so time-critical reminders still went out on schedule while that was pending. Then the client decided the ongoing cost of the personalized send layer was not worth it right now — so today, detection runs automatically and free, and attendee messages go out manually through the platform's own tools. Automation is not always "build it and walk away." Sometimes it is knowing which pieces are worth paying to keep running, and being honest when the answer is "not yet."</p></div>
-
-      <h3>What's Live Today</h3>
-      <div class="metrics">
-        <div class="metric"><span class="num">Daily</span><span class="label">automatic seminar detection, zero manual checking</span></div>
-        <div class="metric"><span class="num">$0</span><span class="label">added cost to the client — detection runs on the freelancer's own low-cost tooling</span></div>
-        <div class="metric"><span class="num">100%</span><span class="label">of time-critical reminders sent on schedule, even through a vendor API blocker</span></div>
-      </div>
-
-    </div>
-  </div>
 
   <div class="more-card">
     <h3>More use cases coming</h3>
