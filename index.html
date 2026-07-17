@@ -1779,24 +1779,79 @@ a { color: inherit; text-decoration: none; }
   els.forEach(el => obs.observe(el));
 })();
 
-// ── Contact form (demo handler) ───────────────────────────
+// ── Contact form → Zoho CRM Web-to-Lead ───────────────────
 (function () {
   const form = document.querySelector('.contact-form');
   if (!form) return;
 
+  const nameInput = form.querySelector('#f-name');
+  const emailInput = form.querySelector('#f-email');
+  const companyInput = form.querySelector('#f-company');
+  const interestInput = form.querySelector('#f-interest');
+  const situationInput = form.querySelector('#f-situation');
+
+  function isValidEmail(v) {
+    const at = v.indexOf('@'), dot = v.lastIndexOf('.');
+    return at > 0 && dot > at + 1 && dot + 2 < v.length;
+  }
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    const fullName = (nameInput.value || '').trim();
+    const email = (emailInput.value || '').trim();
+    if (!fullName || !email || !isValidEmail(email)) return;
+
     const btn = form.querySelector('button[type="submit"]');
     const original = btn.textContent;
-    btn.textContent = '✓ Request Received!';
     btn.disabled = true;
-    btn.style.background = '#2E7D32';
-    setTimeout(() => {
-      btn.textContent = original;
-      btn.disabled = false;
-      btn.style.background = '';
-      form.reset();
-    }, 3000);
+    btn.textContent = 'Sending…';
+
+    const parts = fullName.split(/\s+/);
+    const lastName = parts.length > 1 ? parts.pop() : parts[0];
+    const firstName = parts.length > 0 ? parts.join(' ') : '';
+    const interest = (interestInput && interestInput.value || '').trim();
+    const leadSource = interest ? ('Website – ' + interest) : 'Website Contact Form';
+
+    const formData = new FormData();
+    formData.append('xnQsjsdp', '2aca8732aae656acfcae029c9788120279dd249885b72e208381c746fb2df0b5');
+    formData.append('zc_gad', '');
+    formData.append('xmIwtLD', '90334662aaad9766a77f35fd9c1cae3690b70187f9b69263e1bc254ad267fe81e987ad2ff0515dca1b24c559c09d13cb');
+    formData.append('actionType', 'TGVhZHM=');
+    formData.append('returnURL', 'null');
+    formData.append('ldeskuid', '');
+    formData.append('LDTuvid', '');
+    formData.append('aG9uZXlwb3Q', '');
+    formData.append('First Name', firstName);
+    formData.append('Last Name', lastName);
+    formData.append('Email', email);
+    formData.append('Company', companyInput ? companyInput.value.trim() : '');
+    formData.append('Lead Source', leadSource);
+    formData.append('Description', (situationInput ? situationInput.value.trim() : '') + (interest ? '\n\nInterested in: ' + interest : ''));
+
+    try {
+      if (window.$zoho && window.$zoho.salesiq && window.$zoho.salesiq.visitor) {
+        window.$zoho.salesiq.visitor.name(fullName);
+        window.$zoho.salesiq.visitor.email(email);
+      }
+    } catch (err) {}
+
+    function finish() {
+      btn.textContent = '✓ Request Received!';
+      btn.style.background = '#2E7D32';
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.disabled = false;
+        btn.style.background = '';
+        form.reset();
+      }, 3000);
+    }
+
+    fetch('https://crm.zoho.com/crm/WebToLeadForm', {
+      method: 'POST',
+      body: formData,
+      cache: 'no-cache'
+    }).then(finish).catch(finish);
   });
 })();
 
