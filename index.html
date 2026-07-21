@@ -5,25 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ValuedHR — Experience Valued Here</title>
   <meta name="description" content="ValuedHR is the human-centered HR partner for growing businesses — focused on employee relations, recruiting, leadership coaching, worker wellbeing, and the people who make work worth showing up for." />
-  <meta property="og:title" content="ValuedHR — People-First HR & Coaching" />
-  <meta property="og:description" content="Employee relations, recruiting, executive coaching, worker mental health, the Encore Package for professionals over 50, and the ValuedHR Academy. HR that puts people first." />
   <meta name="keywords" content="people-first HR, employee relations consulting, HR coaching, executive coaching, worker mental health, coaching for professionals over 50, recruiting consulting, employee engagement, ValuedHR"/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://valuedhr.com/"/>
-  <meta property="og:url" content="https://valuedhr.com/"/>
-  <meta property="og:type" content="website" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"ValuedHR Business Services","url":"https://valuedhr.com","description":"ValuedHR is the human-centered HR partner for growing businesses — focused on employee relations, recruiting, leadership coaching, worker wellbeing, and the people who make work worth showing up for.","founder":{"@type":"Person","name":"Michelle Mendez","jobTitle":"Founder & Lead Coach"},"serviceType":["Employee Relations","Recruiting","Executive Coaching","HR Coaching","Worker Mental Health","Employee Engagement","Coaching for Professionals Over 50"],"areaServed":"US","sameAs":["https://valuedhr.com/blog.html"]}</script>
+<meta property="og:title" content="ValuedHR — Experience Valued Here"/>
+<meta property="og:description" content="ValuedHR is the human-centered HR partner for growing businesses — focused on employee relations, recruiting, leadership coaching, worker wellbeing, and the people who make work worth showing up for."/>
+<meta property="og:url" content="https://valuedhr.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://valuedhr.com/assets/valuedhr-social-card.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="ValuedHR — Experience Valued Here"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="ValuedHR — Experience Valued Here"/>
+<meta name="twitter:description" content="ValuedHR is the human-centered HR partner for growing businesses — focused on employee relations, recruiting, leadership coaching, worker wellbeing, and the people who make work worth showing up for."/>
+<meta name="twitter:image" content="https://valuedhr.com/assets/valuedhr-social-card.png"/>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://valuedhr.com/#business","name":"ValuedHR Business Services","url":"https://valuedhr.com/","image":"https://valuedhr.com/assets/valuedhr-social-card.png","email":"admin@valuedhr.com","description":"People-first HR consulting and career coaching for growing businesses and experienced professionals.","founder":{"@type":"Person","name":"Michelle Mendez","jobTitle":"Founder & Lead Coach"},"serviceType":["Fractional HR Consulting","Employee Relations","Recruiting","Executive Coaching","HR Coaching","Employee Engagement","Career Coaching for Professionals Over 50"],"areaServed":{"@type":"Country","name":"United States"},"address":{"@type":"PostalAddress","addressLocality":"Wake Forest","addressRegion":"NC","addressCountry":"US"},"sameAs":["https://www.facebook.com/valuedhr","https://www.instagram.com/valuedhr","https://www.linkedin.com/company/valuedhr","https://www.youtube.com/@valuedhr"]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700;9..40,800&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <style>
 /* ════════════════════════════════════════════════════
    VALUEDHR — Design Tokens + Base
    Palette: Midnight Navy (#0A1F3C), Signal Blue (#3B82F6),
    Sky (#9DC3FF), Mist (#F5F6F8) · Apex identity system
 ════════════════════════════════════════════════════ */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
 
 :root,
 [data-theme='light'] {
@@ -1024,10 +1032,10 @@ a { color: inherit; text-decoration: none; }
   #coaching .container > div,
   #more .container > .section-header ~ div { grid-template-columns: 1fr !important; }
   #more .container > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+  .blog-preview-grid { grid-template-columns: 1fr !important; }
 }
   </style>
-    <script src="https://cdn.pagesense.io/js/valuedhr/256d9da17dfa4f46bd9cbb37c6ef86e2.js"></script>
-</head>
+    </head>
 <body>
 
   <!-- ═══════════════════════════════════════════════
@@ -1543,6 +1551,7 @@ a { color: inherit; text-decoration: none; }
             </div>
           </div>
           <form class="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group" aria-hidden="true" style="position:absolute;left:-9999px"><label for="f-website">Website</label><input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off" /></div>
             <div class="form-row">
               <div class="form-group">
                 <label for="f-name">Full name</label>
@@ -1578,6 +1587,7 @@ a { color: inherit; text-decoration: none; }
               <textarea id="f-situation" name="situation" rows="3" placeholder="What's the biggest challenge you're trying to solve right now?"></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-full">Book My Free Discovery Call</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
             <p class="form-privacy">We don't spam. Your information stays private.</p>
           </form>
         </div>
@@ -1601,13 +1611,13 @@ a { color: inherit; text-decoration: none; }
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+      <div class="blog-preview-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
 
-        <a href="/articles/ai-usage-policy-small-business-guide-2026.html" style="background:var(--color-surface);border-radius:var(--radius-xl);border:1px solid var(--color-border);padding:1.75rem;display:flex;flex-direction:column;gap:0.875rem;text-decoration:none;transition:box-shadow 180ms,transform 180ms;box-shadow:var(--shadow-sm);" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.transform=''">
+        <a href="/articles/ai-people-analytics-small-business-2026.html" style="background:var(--color-surface);border-radius:var(--radius-xl);border:1px solid var(--color-border);padding:1.75rem;display:flex;flex-direction:column;gap:0.875rem;text-decoration:none;transition:box-shadow 180ms,transform 180ms;box-shadow:var(--shadow-sm);" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.transform=''">
           <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:0.25em 0.75em;border-radius:9999px;background:var(--color-primary-light);color:var(--color-primary);width:fit-content;">AI &amp; Technology</span>
-          <h3 style="font-size:var(--text-base);font-weight:700;color:var(--color-text);line-height:1.35;">AI Usage Policy for Employees: A Small Business Guide for 2026</h3>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">Most of your employees are already using AI at work, whether you've approved it or not — and without clear guardrails, that creates real risk around data privacy, client confidentiality, and compliance. Here's a plain-English framework for writing an AI usage policy that protects your business without slowing your team down.</p>
-          <span style="font-size:var(--text-xs);color:var(--color-text-faint);">July 13, 2026 · 6 min read</span>
+          <h3 style="font-size:var(--text-base);font-weight:700;color:var(--color-text);line-height:1.35;">AI HR Analytics in 2026: How Small Businesses Can Finally Use Their People Data</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">Industry surveys just named HR reporting and analytics the top AI opportunity for the year ahead. Here's how to turn the people data you already have into decisions that cut turnover and hiring costs.</p>
+          <span style="font-size:var(--text-xs);color:var(--color-text-faint);">July 21, 2026 · 6 min read</span>
         </a>
 
         <a href="blog.html" style="background:var(--color-surface);border-radius:var(--radius-xl);border:1px solid var(--color-border);padding:1.75rem;display:flex;flex-direction:column;gap:0.875rem;text-decoration:none;transition:box-shadow 180ms,transform 180ms;box-shadow:var(--shadow-sm);" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='var(--shadow-sm)';this.style.transform=''">
@@ -1688,7 +1698,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </div>
     <div class="footer-bottom container">
-      <p>&copy; 2026 ValuedHR Business Services. All rights reserved.</p>
+      <p>&copy; 2026 ValuedHR Business Services. All rights reserved. · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
       <p>Wake Forest, NC</p>
     </div>
   </footer>
@@ -1789,6 +1799,8 @@ a { color: inherit; text-decoration: none; }
   const companyInput = form.querySelector('#f-company');
   const interestInput = form.querySelector('#f-interest');
   const situationInput = form.querySelector('#f-situation');
+  const websiteInput = form.querySelector('#f-website');
+  const status = form.querySelector('.form-status');
 
   function isValidEmail(v) {
     const at = v.indexOf('@'), dot = v.lastIndexOf('.');
@@ -1800,7 +1812,10 @@ a { color: inherit; text-decoration: none; }
 
     const fullName = (nameInput.value || '').trim();
     const email = (emailInput.value || '').trim();
-    if (!fullName || !email || !isValidEmail(email)) return;
+    status.textContent = '';
+    if (websiteInput && websiteInput.value) return;
+    if (!fullName) { status.textContent = 'Please enter your full name.'; nameInput.focus(); return; }
+    if (!email || !isValidEmail(email)) { status.textContent = 'Please enter a valid work email.'; emailInput.focus(); return; }
 
     const btn = form.querySelector('button[type="submit"]');
     const original = btn.textContent;
@@ -1837,6 +1852,8 @@ a { color: inherit; text-decoration: none; }
     } catch (err) {}
 
     function finish() {
+      status.textContent = 'Thank you. Your request was received and we will follow up shortly.';
+      if (window.valuedHRTrack) window.valuedHRTrack('lead_submit_success', {interest: interest || 'Not specified'});
       btn.textContent = '✓ Request Received!';
       btn.style.background = '#2E7D32';
       setTimeout(() => {
@@ -1847,18 +1864,24 @@ a { color: inherit; text-decoration: none; }
       }, 3000);
     }
 
+    function fail() {
+      btn.textContent = original;
+      btn.disabled = false;
+      status.textContent = 'We could not send your request. Please email admin@valuedhr.com.';
+      if (window.valuedHRTrack) window.valuedHRTrack('lead_submit_error');
+    }
+
     fetch('https://crm.zoho.com/crm/WebToLeadForm', {
       method: 'POST',
       body: formData,
-      cache: 'no-cache'
-    }).then(finish).catch(finish);
+      cache: 'no-cache',
+      mode: 'no-cors'
+    }).then(finish).catch(fail);
   });
 })();
 
   </script>
 
 
-      <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script>
-    <script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqec7f317f631039c2620c40c836d39c5d369bdd9c7d8978f3f03f7b99a1f78c46" defer></script>
-</body>
+      <script src="/assets/site.js" defer></script></body>
 </html>

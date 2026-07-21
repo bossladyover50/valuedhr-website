@@ -5,7 +5,6 @@
 REPO_DIR="/Users/michellemendez/Documents/Claude/Projects/ValuedHR Website"
 GITHUB_USER="bossladyover50"
 GITHUB_REPO="valuedhr-website"
-TOKEN=$(cat "$REPO_DIR/.github-token")
 
 echo ""
 echo "=== ValuedHR Auto-Deploy Setup ==="
@@ -15,10 +14,10 @@ echo ""
 chmod +x "$REPO_DIR/deploy.sh"
 echo "✓ deploy.sh made executable"
 
-# 2. Configure git remote (with token for passwordless push)
+# 2. Configure a credential-safe remote. Authenticate with GitHub CLI or SSH.
 cd "$REPO_DIR" || exit 1
 git remote remove origin 2>/dev/null
-git remote add origin "https://$GITHUB_USER:$TOKEN@github.com/$GITHUB_USER/$GITHUB_REPO.git"
+git remote add origin "https://github.com/$GITHUB_USER/$GITHUB_REPO.git"
 echo "✓ GitHub remote configured"
 
 # 3. Check if repo has existing content to handle first push
@@ -28,10 +27,10 @@ if [ "$BRANCHES" -eq 0 ]; then
   git push -u origin main
   echo "✓ Initial push complete"
 else
-  echo "  Repo already has content — pulling first to sync..."
+  echo "  Repo already has content — verifying the remote..."
   git fetch origin
-  git push -u origin main --force
-  echo "✓ Pushed to GitHub"
+  git push -u origin main
+  echo "✓ Pushed to GitHub without rewriting remote history"
 fi
 
 # 4. Install the Launch Agent (Mac background watcher)

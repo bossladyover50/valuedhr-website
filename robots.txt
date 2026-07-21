@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /proposal.html
+
+Sitemap: https://valuedhr.com/sitemap.xml
