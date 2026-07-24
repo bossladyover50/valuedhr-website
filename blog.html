@@ -23,65 +23,68 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"ValuedHR Blog","description":"Practical HR guidance for small and growing businesses","url":"https://valuedhr.com/blog.html","publisher":{"@type":"Organization","name":"ValuedHR","url":"https://valuedhr.com"}}</script>
 <style>
-:root{--bg:#F5F6F8;--text:#16181D;--primary:#0A1F3C;--accent:#3B82F6;--muted:#6B7280;--card:#FFFFFF;--font-d:'DM Sans','Helvetica Neue',sans-serif;--font-b:'DM Sans','Helvetica Neue',sans-serif}
+:root{--paper:#fbfbf8;--ink:#101828;--navy:#0a1f3c;--blue:#3466e8;--blue-light:#9dc3ff;--line:#d9dde5;--muted:#657080;--font-d:'DM Sans','Helvetica Neue',Arial,sans-serif;--font-b:'DM Sans','Helvetica Neue',Arial,sans-serif}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--font-b);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);background:var(--paper);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-/* NAV */
-nav{background:var(--primary);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+nav{background:rgba(251,251,248,.94);border-bottom:1px solid var(--line);padding:1rem clamp(1.25rem,4vw,4rem);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(14px)}
 nav a.logo,nav .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-nav .nav-links a{color:rgba(255,255,255,0.75);font-size:.875rem;font-weight:500;margin-left:1.5rem;transition:color .2s}
-nav .nav-links a:hover{color:#fff}
-/* HERO */
-.blog-hero{background:var(--primary);color:#fff;padding:4rem 2rem 3.5rem;text-align:center}
-.blog-hero .eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
-.blog-hero h1{font-family:var(--font-d);font-size:clamp(2rem,5vw,3.5rem);margin-bottom:1rem;line-height:1.15}
-.blog-hero p{font-size:1.125rem;color:rgba(255,255,255,.7);max-width:600px;margin:0 auto 2rem}
-/* SEARCH */
-.search-wrap{max-width:520px;margin:0 auto;position:relative}
-.search-wrap input{width:100%;padding:.875rem 3rem .875rem 1.25rem;border-radius:.625rem;border:none;font-family:var(--font-b);font-size:1rem;outline:none}
-.search-wrap .search-icon{position:absolute;right:1rem;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
-/* FILTERS */
-.filters{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;padding:2rem 2rem 0}
-.filter-btn{padding:.5rem 1.25rem;border-radius:2rem;border:2px solid transparent;background:#fff;font-family:var(--font-b);font-size:.875rem;font-weight:600;cursor:pointer;transition:all .2s;color:var(--muted)}
-.filter-btn:hover,.filter-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
-/* FEATURED */
-.featured-section{max-width:1140px;margin:3rem auto 0;padding:0 2rem}
-.featured-section h2{font-family:var(--font-d);font-size:1.75rem;color:var(--primary);margin-bottom:1.5rem}
-.featured-card{display:grid;grid-template-columns:1fr 1fr;gap:2rem;background:var(--primary);border-radius:1.25rem;overflow:hidden;color:#fff}
-.featured-card .featured-img{background:linear-gradient(135deg,#0d1e36 0%,#3B82F6 100%);display:flex;align-items:center;justify-content:center;padding:3rem;min-height:280px}
-.featured-card .featured-img span{font-family:var(--font-d);font-size:3.5rem;line-height:1;color:rgba(255,255,255,.15);text-align:center}
-.featured-card .featured-body{padding:2.5rem 2.5rem 2.5rem 0;display:flex;flex-direction:column;justify-content:center}
-.featured-card .tag{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem}
-.featured-card h3{font-family:var(--font-d);font-size:1.75rem;line-height:1.25;margin-bottom:1rem}
-.featured-card p{color:rgba(255,255,255,.7);font-size:.9375rem;margin-bottom:1.5rem}
-.featured-card a.read-btn{display:inline-block;background:var(--accent);color:#fff;padding:.625rem 1.5rem;border-radius:.5rem;font-weight:700;font-size:.875rem;width:fit-content}
-/* GRID */
-.grid-section{max-width:1140px;margin:3rem auto;padding:0 2rem}
-.grid-section .section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem}
-.grid-section .section-header h2{font-family:var(--font-d);font-size:1.5rem;color:var(--primary)}
-.article-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
-.article-card{background:var(--card);border-radius:1rem;padding:1.75rem;border:1px solid rgba(0,0,0,.07);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
-.article-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.1)}
-.article-card .card-tag{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.625rem}
-.article-card h3{font-family:var(--font-d);font-size:1.2rem;color:var(--primary);line-height:1.3;margin-bottom:.75rem;flex:1}
-.article-card .card-meta{font-size:.8125rem;color:var(--muted);display:flex;align-items:center;gap:.5rem;margin-top:auto;padding-top:1rem;border-top:1px solid rgba(0,0,0,.06)}
-.article-card .read-more{margin-top:.875rem;font-size:.875rem;font-weight:700;color:var(--accent);display:inline-flex;align-items:center;gap:.3rem}
-/* NEWSLETTER */
-.newsletter{background:var(--primary);color:#fff;padding:4rem 2rem;text-align:center;margin:4rem 0 0}
-.newsletter h2{font-family:var(--font-d);font-size:2rem;margin-bottom:.75rem}
-.newsletter p{color:rgba(255,255,255,.7);margin-bottom:2rem;font-size:1.0625rem}
-.nl-form{display:flex;gap:.75rem;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
-.nl-form input{flex:1;min-width:220px;padding:.875rem 1.25rem;border-radius:.5rem;border:none;font-family:var(--font-b);font-size:1rem;outline:none}
-.nl-form button{background:var(--accent);color:#fff;border:none;padding:.875rem 1.75rem;border-radius:.5rem;font-family:var(--font-b);font-size:1rem;font-weight:700;cursor:pointer;white-space:nowrap}
-.nl-form button:hover{background:#2563EB}
-/* FOOTER */
-footer{background:#060e1a;color:rgba(255,255,255,.5);text-align:center;padding:2rem;font-size:.875rem}
-footer a{color:var(--accent)}
-/* HIDDEN */
+nav .logo span span:first-child{color:var(--ink)!important}
+nav .nav-links{display:flex;align-items:center;gap:1.4rem}
+nav .nav-links a{color:var(--ink);font-size:.88rem;font-weight:650;transition:color .2s}
+nav .nav-links a:hover,nav .nav-links a[aria-current="page"]{color:var(--blue)}
+.blog-hero{max-width:1380px;margin:0 auto;padding:clamp(3.5rem,9vw,8rem) clamp(1.25rem,4vw,4rem) clamp(2.8rem,6vw,5rem);display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,360px);align-items:end;gap:2rem}
+.blog-hero .eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:1.15rem}
+.blog-hero h1{font-family:var(--font-d);font-size:clamp(3.25rem,8vw,7.5rem);letter-spacing:-.075em;line-height:.9;max-width:800px}
+.blog-hero p{font-size:1.05rem;color:var(--muted);max-width:590px;margin-top:1.35rem;line-height:1.6}
+.search-wrap{position:relative;align-self:end}
+.search-wrap input{width:100%;padding:1rem 3rem 1rem 1.15rem;border:1px solid var(--line);border-radius:0;background:#fff;font-family:var(--font-b);font-size:.95rem;color:var(--ink);outline-offset:3px}
+.search-wrap input:focus{border-color:var(--blue);outline:2px solid rgba(52,102,232,.18)}
+.search-wrap .search-icon{position:absolute;right:1rem;top:50%;transform:translateY(-50%);color:var(--blue);pointer-events:none}
+.filters{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;gap:1.6rem;overflow-x:auto;padding:.15rem max(1.25rem,calc((100% - 1300px)/2));scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.filter-btn{position:relative;flex:0 0 auto;padding:1.05rem 0 .95rem;border:0;background:transparent;font-family:var(--font-b);font-size:.8rem;font-weight:750;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;color:var(--muted)}
+.filter-btn::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:transparent}
+.filter-btn:hover,.filter-btn.active{color:var(--ink)}
+.filter-btn.active::after{background:var(--blue)}
+.featured-section,.grid-section{max-width:1380px;margin:0 auto;padding:clamp(3rem,6vw,5.5rem) clamp(1.25rem,4vw,4rem) 0}
+.section-label{font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem}
+.featured-card{display:grid;grid-template-columns:1.1fr .9fr;min-height:470px;background:var(--navy);color:#fff;overflow:hidden}
+.featured-card .featured-img{position:relative;display:flex;align-items:flex-end;padding:clamp(2rem,5vw,4rem);overflow:hidden;background:linear-gradient(135deg,#2f5fe3 0%,#172d6a 57%,#0a1f3c 100%)}
+.featured-card .featured-img::before{content:"";position:absolute;width:min(38vw,540px);aspect-ratio:1;border:1px solid rgba(255,255,255,.42);border-radius:50%;right:-12%;top:-18%}
+.featured-card .featured-img::after{content:"";position:absolute;width:min(26vw,360px);aspect-ratio:1;border:1px solid rgba(255,255,255,.24);border-radius:50%;left:-13%;bottom:-32%}
+.featured-card .featured-img span{position:relative;z-index:1;max-width:8ch;font-family:var(--font-d);font-size:clamp(2.4rem,5vw,5rem);font-weight:700;letter-spacing:-.075em;line-height:.9;text-align:left}
+.featured-card .featured-body{padding:clamp(2rem,5vw,4rem);display:flex;flex-direction:column;justify-content:flex-end}
+.featured-card .tag,.article-card .card-tag{font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-light);margin-bottom:1.1rem}
+.featured-card h3{font-family:var(--font-d);font-size:clamp(2rem,3.4vw,3.8rem);letter-spacing:-.055em;line-height:1.02;margin-bottom:1.25rem}
+.featured-card p{color:rgba(255,255,255,.74);font-size:1rem;line-height:1.6;margin-bottom:2rem;max-width:45ch}
+.featured-card a.read-btn{display:inline-flex;align-items:center;gap:.5rem;color:#fff;font-size:.88rem;font-weight:750;border-bottom:1px solid var(--blue-light);padding-bottom:.35rem;width:max-content}
+.featured-card a.read-btn:hover{color:var(--blue-light)}
+.grid-section .section-header{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1.25rem}
+.grid-section .section-header h2{font-family:var(--font-d);font-size:clamp(2rem,3.6vw,3.6rem);letter-spacing:-.06em;line-height:1;color:var(--ink)}
+#count-label{font-family:'IBM Plex Mono',monospace;font-size:.75rem!important;color:var(--muted)!important;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.article-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line)}
+.article-card{min-height:235px;padding:2rem 2rem 2.2rem 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;transition:background .2s,padding .2s}
+.article-card:nth-child(even){border-left:1px solid var(--line);padding-left:2rem;padding-right:0}
+.article-card:hover{background:rgba(52,102,232,.045)}
+.article-card .card-tag{color:var(--blue);margin-bottom:.9rem}
+.article-card h3{font-family:var(--font-d);font-size:clamp(1.25rem,2vw,1.85rem);letter-spacing:-.035em;color:var(--ink);line-height:1.13;max-width:25ch}
+.article-card .card-meta{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--muted);letter-spacing:.02em;margin-top:auto;padding-top:1.35rem}
+.article-card .read-more{margin-top:.75rem;font-size:.82rem;font-weight:750;color:var(--blue);width:max-content}
+.article-card .read-more:hover{color:var(--navy);text-decoration:underline;text-underline-offset:4px}
+.newsletter{max-width:1380px;margin:clamp(4rem,9vw,8rem) auto 0;padding:clamp(3rem,7vw,6rem) clamp(1.25rem,6vw,6rem);background:var(--navy);color:#fff;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end}
+.newsletter h2{font-family:var(--font-d);font-size:clamp(2.25rem,4.5vw,4.8rem);letter-spacing:-.065em;line-height:.94;max-width:10ch}
+.newsletter p{color:rgba(255,255,255,.72);margin-top:1rem;font-size:1rem;max-width:48ch}
+.nl-form{display:flex;gap:.65rem;flex-wrap:wrap;justify-content:flex-end;min-width:min(100%,420px)}
+.nl-form input{flex:1;min-width:220px;padding:1rem 1.1rem;border:1px solid transparent;background:#fff;border-radius:0;font-family:var(--font-b);font-size:.95rem;outline-offset:3px}
+.nl-form button{background:var(--blue);color:#fff;border:1px solid var(--blue);padding:1rem 1.3rem;border-radius:0;font-family:var(--font-b);font-size:.9rem;font-weight:750;cursor:pointer;white-space:nowrap}
+.nl-form button:hover{background:#2755ca}
+footer{max-width:1380px;margin:0 auto;padding:2rem clamp(1.25rem,4vw,4rem) 3rem;color:var(--muted);font-size:.83rem}
+footer a{color:var(--ink)} footer a:hover{color:var(--blue)}
 .article-card[hidden]{display:none}
-@media(max-width:640px){.featured-card{grid-template-columns:1fr}.featured-card .featured-img{display:none}.featured-card .featured-body{padding:2rem}}
-.hero .cat,.blog-hero .eyebrow,.card-tag,.tag,.back,.hero .meta,.article-card .card-meta{font-family:'IBM Plex Mono',monospace!important;}</style>
+@media(max-width:760px){nav{padding:.9rem 1.25rem}nav .nav-links{gap:.85rem}nav .nav-links a{font-size:.78rem}.blog-hero{grid-template-columns:1fr;padding-top:4rem}.featured-card{grid-template-columns:1fr}.featured-card .featured-img{min-height:280px}.article-grid{grid-template-columns:1fr}.article-card,.article-card:nth-child(even){border-left:0;padding:1.7rem 0;min-height:0}.newsletter{grid-template-columns:1fr}.nl-form{justify-content:flex-start}}
+@media(max-width:440px){nav .nav-links a:nth-child(-n+2){display:none}.filters{gap:1.15rem}.featured-card h3{font-size:2rem}}</style>
 </head>
 <body>
 
@@ -90,15 +93,17 @@ footer a{color:var(--accent)}
   <div class="nav-links">
     <a href="/index.html">Home</a>
     <a href="/use-cases.html">Use Cases</a>
-    <a href="/blog.html">Blog</a>
+    <a href="/blog.html" aria-current="page">Blog</a>
     <a href="/index.html#contact">Contact</a>
   </div>
 </nav>
 
 <div class="blog-hero">
-  <div class="eyebrow">ValuedHR Blog</div>
-  <h1>HR Guidance for Real Businesses</h1>
-  <p>Practical articles on compliance, hiring, retention, and people operations &mdash; written for small business owners who are figuring it out.</p>
+  <div>
+    <div class="eyebrow">Insights for growing teams</div>
+    <h1>The ValuedHR<br>Blog</h1>
+    <p>Clear people guidance for the decisions that shape your business &mdash; from hiring and compliance to stronger teams and better work.</p>
+  </div>
   <div class="search-wrap">
     <input type="text" id="search-input" placeholder="Search articles&hellip;" aria-label="Search articles"/>
     <span class="search-icon">&#128269;</span>
@@ -116,21 +121,21 @@ footer a{color:var(--accent)}
 </div>
 
 <section class="featured-section">
-  <h2>Featured Article</h2>
+  <p class="section-label">Featured</p>
   <div class="featured-card">
-    <div class="featured-img"><span>HR</span></div>
+    <div class="featured-img"><span>Human<br>work,<br>well led.</span></div>
     <div class="featured-body">
-      <div class="tag">People Operations</div>
-      <h3>People Operations for Small Teams: Building HR Systems That Scale</h3>
-      <p>How to build the HR infrastructure to grow from 10 to 50 people without losing the culture that got you there.</p>
-      <a href="/articles/people-ops-for-small-teams.html" class="read-btn">Read Article &rarr;</a>
+      <div class="tag">AI &amp; Technology &middot; July 23, 2026</div>
+      <h3>AI in HR for Small Businesses in 2026: Where Human Oversight Matters</h3>
+      <p>Use AI to support your HR process, keep human judgment at the center, and know where additional care is needed.</p>
+      <a href="/articles/ai-hr-trust-gap-2026.html" class="read-btn">Read the article &rarr;</a>
     </div>
   </div>
 </section>
 
 <section class="grid-section">
   <div class="section-header">
-    <h2>All Articles</h2>
+    <h2>Latest</h2>
     <span id="count-label" style="font-size:.875rem;color:var(--muted)"></span>
   </div>
   <div class="article-grid" id="article-grid">
