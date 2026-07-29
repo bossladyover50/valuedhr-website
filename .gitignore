@@ -5,6 +5,10 @@ ValuedHR Social Media Post Metricool template
 
 # Git automation config (contains token — keep private)
 .github-token
+.env
+.env.*
+!.env.example
+.zoho-token.json
 
 # macOS
 .DS_Store
