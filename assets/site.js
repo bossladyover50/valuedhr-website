@@ -12,7 +12,6 @@
     if(document.getElementById('zsiqscript'))return;
     window.$zoho=window.$zoho||{}; window.$zoho.salesiq=window.$zoho.salesiq||{ready:function(){}};
     var chat=document.createElement('script'); chat.id='zsiqscript'; chat.defer=true; chat.src='https://salesiq.zohopublic.com/widget?wc=siqec7f317f631039c2620c40c836d39c5d369bdd9c7d8978f3f03f7b99a1f78c46'; document.body.appendChild(chat);
-    var analytics=document.createElement('script'); analytics.defer=true; analytics.src='https://cdn.pagesense.io/js/valuedhr/256d9da17dfa4f46bd9cbb37c6ef86e2.js'; document.body.appendChild(analytics);
   }
   function showChatChoice(){
     if(document.querySelector('.chat-consent-launcher'))return;
