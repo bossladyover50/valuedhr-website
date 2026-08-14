@@ -1058,6 +1058,7 @@ a { color: inherit; text-decoration: none; }
         <li><a href="services/virtual-assistant.html">Virtual Assistant</a></li>
         <li><a href="use-cases.html">Use Cases</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="partner-with-us.html">Partner With Us</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-actions">
@@ -1079,6 +1080,7 @@ a { color: inherit; text-decoration: none; }
         <li><a href="services/virtual-assistant.html">Virtual Assistant</a></li>
         <li><a href="use-cases.html">Use Cases</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="partner-with-us.html">Partner With Us</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="https://app.reclaim.ai/m/mmendez/discovery-call" target="_blank" rel="noopener" class="btn btn-primary">Book a Discovery Call</a></li>
       </ul>
@@ -1600,6 +1602,7 @@ a { color: inherit; text-decoration: none; }
                 <option>ValuedHR Academy (Courses &amp; Workshops)</option>
                 <option>Freelance Taskers (Waitlist)</option>
                 <option>Outsource Your To-Do List (Waitlist)</option>
+                <option>Partner With Us</option>
                 <option>Not sure yet — I need a recommendation</option>
               </select>
             </div>
@@ -1716,6 +1719,7 @@ a { color: inherit; text-decoration: none; }
             <li><a href="#why">Why ValuedHR</a></li>
             <li><a href="#process">How It Works</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="partner-with-us.html">Partner With Us</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -1850,7 +1854,7 @@ a { color: inherit; text-decoration: none; }
     const lastName = parts.length > 1 ? parts.pop() : parts[0];
     const firstName = parts.length > 0 ? parts.join(' ') : '';
     const interest = (interestInput && interestInput.value || '').trim();
-    const leadSource = interest ? ('Website – ' + interest) : 'Website Contact Form';
+    const leadSource = interest === 'Partner With Us' ? 'Partner' : (interest ? ('Website – ' + interest) : 'Website Contact Form');
 
     const formData = new FormData();
     formData.append('xnQsjsdp', '2aca8732aae656acfcae029c9788120279dd249885b72e208381c746fb2df0b5');
@@ -1866,7 +1870,7 @@ a { color: inherit; text-decoration: none; }
     formData.append('Email', email);
     formData.append('Company', companyInput ? companyInput.value.trim() : '');
     formData.append('Lead Source', leadSource);
-    formData.append('Description', (situationInput ? situationInput.value.trim() : '') + (interest ? '\n\nInterested in: ' + interest : ''));
+    formData.append('Description', (interest === 'Partner With Us' ? 'ValuedHR Partner Interest\n\n' : '') + (situationInput ? situationInput.value.trim() : '') + (interest ? '\n\nInterested in: ' + interest : ''));
 
     try {
       if (window.$zoho && window.$zoho.salesiq && window.$zoho.salesiq.visitor) {
