@@ -14,14 +14,14 @@
     if(!email||!email.includes('@')){status.textContent='Please enter a valid email address.';form.elements.email.focus();return;}
     if(!message){status.textContent='Please tell us briefly how we can help.';form.elements.message.focus();return;}
     button.disabled=true;button.textContent='Sending…';status.textContent='';
-    const parts=name.split(/\s+/),lastName=parts.length>1?parts.pop():parts[0],firstName=parts.length>0?parts.join(' '):'';
+    const parts=name.split(/\s+/),lastName=parts.length>1?parts.pop():parts[0],firstName=parts.length>0?parts.join(' '):'Website';
     const interest=form.elements.interest.value.trim();
     const data=new FormData();
-    data.append('xnQsjsdp','2aca8732aae656acfcae029c9788120279dd249885b72e208381c746fb2df0b5');
-    data.append('zc_gad','');data.append('xmIwtLD','90334662aaad9766a77f35fd9c1cae3690b70187f9b69263e1bc254ad267fe81e987ad2ff0515dca1b24c559c09d13cb');
+    data.append('xnQsjsdp','6e7d74ee7510e036d0e12453d72b8465054e94a314e870f46dc5ab83ec15d7ce');
+    data.append('zc_gad','');data.append('xmIwtLD','f16612d5ae9385c319783ad083913e13b505ee8468aafea05a22bbfd5a3dd7fbadd4fcf3507edd7b39381a106ebbf415');
     data.append('actionType','TGVhZHM=');data.append('returnURL','null');data.append('ldeskuid','');data.append('LDTuvid','');data.append('aG9uZXlwb3Q','');
     data.append('First Name',firstName);data.append('Last Name',lastName);data.append('Email',email);
-    data.append('Phone',form.elements.phone.value.trim());data.append('Company',form.elements.company.value.trim());
+    data.append('Phone',form.elements.phone.value.trim());data.append('Company',form.elements.company.value.trim()||'Website Inquiry');
     data.append('Lead Source',interest?'Website – '+interest:'Website Contact Form');
     data.append('Description',message+(interest?'\n\nInterested in: '+interest:''));
     fetch('https://crm.zoho.com/crm/WebToLeadForm',{method:'POST',body:data,cache:'no-cache',mode:'no-cors'}).then(function(){
