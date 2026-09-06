@@ -145,12 +145,25 @@ footer a{color:var(--ink)} footer a:hover{color:var(--blue)}
   </div>
 </section>
 
-<section class="newsletter">
+<section class="newsletter" id="newsletter">
   <h2>Get HR Insights in Your Inbox</h2>
   <p>Practical guidance for small business owners &mdash; no jargon, no filler. Delivered twice a month.</p>
-  <form class="nl-form" onsubmit="handleNewsletterSubmit(event)">
+  <form class="nl-form" action="https://crm.zoho.com/crm/WebToLeadForm" method="POST" enctype="multipart/form-data" accept-charset="UTF-8" onsubmit="return handleNewsletterSubmit(event)">
+    <input type="hidden" name="xnQsjsdp" value="6e7d74ee7510e036d0e12453d72b8465054e94a314e870f46dc5ab83ec15d7ce"/>
+    <input type="hidden" name="zc_gad" value=""/>
+    <input type="hidden" name="xmIwtLD" value="f16612d5ae9385c319783ad083913e13b505ee8468aafea05a22bbfd5a3dd7fbadd4fcf3507edd7b39381a106ebbf415"/>
+    <input type="hidden" name="actionType" value="TGVhZHM="/>
+    <input type="hidden" name="returnURL" value="https://valuedhr.com/blog.html?subscribed=1#newsletter"/>
+    <input type="hidden" name="ldeskuid" value=""/>
+    <input type="hidden" name="LDTuvid" value=""/>
+    <input type="hidden" name="aG9uZXlwb3Q" value=""/>
+    <input type="hidden" name="First Name" value="Website"/>
+    <input type="hidden" name="Last Name" value="Newsletter Subscriber"/>
+    <input type="hidden" name="Company" value="ValuedHR Newsletter"/>
+    <input type="hidden" name="Lead Source" value="Web Download"/>
+    <input type="hidden" name="Description" value="Newsletter subscription from valuedhr.com/blog."/>
     <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px"/>
-    <input type="email" name="email" placeholder="Your email address" required aria-label="Email address"/>
+    <input type="email" name="Email" placeholder="Your email address" required aria-label="Email address"/>
     <button type="submit">Subscribe</button>
   </form>
   <p id="nl-success" role="status" aria-live="polite" style="display:none;color:#9EE8EC;margin-top:1rem;font-weight:600;"></p>
@@ -200,25 +213,19 @@ searchInput.addEventListener('input', e => {
 
 updateGrid();
 
-async function handleNewsletterSubmit(e){
-  e.preventDefault();
-  const form=e.target, status=document.getElementById('nl-success'), button=form.querySelector('button');
-  if(form.elements.website.value) return;
-  button.disabled=true; button.textContent='Subscribing…'; status.style.display='block'; status.textContent='';
-  const data=new FormData();
-  data.append('xnQsjsdp','6e7d74ee7510e036d0e12453d72b8465054e94a314e870f46dc5ab83ec15d7ce');
-  data.append('xmIwtLD','f16612d5ae9385c319783ad083913e13b505ee8468aafea05a22bbfd5a3dd7fbadd4fcf3507edd7b39381a106ebbf415');
-  data.append('actionType','TGVhZHM='); data.append('returnURL','null'); data.append('First Name','Website'); data.append('Last Name','Newsletter Subscriber');
-  data.append('Company','ValuedHR Newsletter'); data.append('Email',form.elements.email.value.trim());
-  data.append('Lead Source','Web Download'); data.append('Description','Newsletter subscription from valuedhr.com/blog.');
-  try{
-    await fetch('https://crm.zoho.com/crm/WebToLeadForm',{method:'POST',body:data,mode:'no-cors',cache:'no-cache'});
-    status.textContent='✓ You’re on the list! Welcome aboard.'; form.elements.email.value='';
-    if(window.valuedHRTrack) window.valuedHRTrack('newsletter_signup_success');
-  }catch(err){
-    status.textContent='We could not subscribe you. Please email admin@valuedhr.com.';
-    if(window.valuedHRTrack) window.valuedHRTrack('newsletter_signup_error');
-  }finally{button.disabled=false;button.textContent='Subscribe';}
+function handleNewsletterSubmit(e){
+  const form=e.currentTarget, status=document.getElementById('nl-success'), button=form.querySelector('button');
+  if(form.elements.website.value){e.preventDefault();return false;}
+  button.disabled=true; button.textContent='Subscribing…';
+  status.style.display='block'; status.textContent='Submitting your subscription securely…';
+  if(window.valuedHRTrack) window.valuedHRTrack('newsletter_signup_submit');
+  return true;
+}
+
+if(new URLSearchParams(window.location.search).get('subscribed')==='1'){
+  const status=document.getElementById('nl-success');
+  status.style.display='block'; status.textContent='✓ You’re on the list! Welcome aboard.';
+  if(window.valuedHRTrack) window.valuedHRTrack('newsletter_signup_success');
 }
 </script>
 
